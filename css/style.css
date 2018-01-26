@@ -1,0 +1,67 @@
+html,
+body {
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #102733;
+  background: radial-gradient(circle, #58215E, #102733);
+}
+
+/* Grid */
+
+.container {
+  min-width: 20rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 20rem) {
+  .container {
+    max-width: 25rem;
+  }
+}
+
+.main-header_temp {
+  min-height: 33%;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.logo_temp{
+  display: block;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+.main-bio_temp {
+  padding-top: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  margin-top: 1em;
+}
+
+.main-links_temp {
+  padding: 0 2em;
+}
+
+/* Typography */
+
+body {
+  color: #FFF9F3;
+  font-size: 100%;
+  font-family: monospace;
+}
+
+.main-header_temp {
+  text-align: center;
+}
+
+.navigation li {
+  display: inline-block;
+}
