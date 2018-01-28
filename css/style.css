@@ -14,22 +14,33 @@ body {
 /* Grid */
 
 .container {
-  min-width: 20rem;
+  display: table;
+  vertical-align: middle;
+  min-width: 18rem;
   padding: 0 1rem;
   margin: 0 auto;
+  margin-top: 1rem;
+  min-height: 28vh;
 }
 
 @media screen and (min-width: 20rem) {
   .container {
-    max-width: 25rem;
+    max-width: 22rem;
   }
 }
 
+/*
 .main-header_temp {
   min-height: 33%;
   padding: 1em;
   margin-bottom: 1em;
 }
+
+.main-logo-container_temp {
+  min-height: 33%;
+  margin-bottom: 1em;
+}
+*/
 
 .logo_temp{
   display: block;
@@ -62,6 +73,16 @@ body {
   text-align: center;
 }
 
+.navigation {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
 .navigation li {
   display: inline-block;
+}
+
+a {
+  color: #FFF9F3;
 }
