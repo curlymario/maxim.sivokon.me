@@ -1,0 +1,25 @@
+.c-logo {
+  font-family: $main-family;
+  font-weight: $medium-weight;
+  font-size: $font-size;
+  color: $text-color
+}
+
+.c-title {
+  font-family: $main-family;
+  font-size: 2.25rem;
+  line-height: 1.16;
+  font-weight: $bold-weight;
+}
+
+.links-list {
+  padding: 0;
+  list-style: none;
+
+  &__item {
+    font-family: $main-family;
+    font-size: 1.125rem;
+    letter-spacing: 0.05em;
+    color: $text-color
+  }
+}
