@@ -45,6 +45,10 @@ a {
 
 /* ====== MAIN ====== */
 
+body {
+  background: #FFFEFD url("../img/bg-noise-300x300.png") 0 0 repeat;
+}
+
 .container {
   padding-left: 18px;
   padding-right: 18px;
@@ -67,5 +71,4 @@ a {
   letter-spacing: 0.05em;
 
   list-style: none;
-
 }
