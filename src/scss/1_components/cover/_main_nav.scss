@@ -1,0 +1,40 @@
+.main_nav {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: $text-main;
+  font-weight: $regular-weight;
+
+  display: flex;
+  flex-direction: row;
+  align-self: start;
+
+  @supports (display: grid) {
+    transform: rotate(90deg);
+  }
+
+  @supports (display: grid) and (writing-mode: vertical-rl) {
+    transform: none; 
+    writing-mode: vertical-rl;
+  }
+
+  @media (min-width: $phablet) { 
+    flex-direction: column;
+    transform: none; 
+    writing-mode: horizontal-tb;
+    text-align: right;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0.5em;
+
+    @supports (display: grid) {
+      margin-right: 0;
+      margin-left: 0.1em;
+      margin-bottom: 1em;
+    }
+  }
+}

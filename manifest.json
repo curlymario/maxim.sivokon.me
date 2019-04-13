@@ -1,0 +1,21 @@
+{
+    "short_name": "MaximVS",
+    "name": "Maxim V Sivokon",
+    "icons": [
+      {
+        "src": "/img/favicon/favicon-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/img/favicon/favicon-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "/",
+    "background_color": "#FFF9F2",
+    "display": "browser",
+    "scope": "/",
+    "theme_color": "#6E203D"
+  }

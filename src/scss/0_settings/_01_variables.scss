@@ -1,0 +1,34 @@
+// colors
+$color-main:                #6E203D;
+
+$color-light:               #FFFEFD;
+
+$text-color-black:          #232332;
+$text-color-gray:           #8F8F95;
+
+// font-family
+$text-main:                 'IBM Plex Sans', Roboto, Verdana, sans-serif;
+$text-content:              'IBM Plex Sans', Roboto, Verdana, sans-serif;
+$text-display:              Rubik, 'Franklin Gothic Medium', Verdana, sans-serif;
+$text-ui:                   'IBM Plex Mono', 'Courier New', Courier, monospace;
+//TODO
+//fix FOUT
+
+// font-weight:
+$extralight-weight:         200;
+$light-weight:              300;
+$regular-weight:            400;
+$medium-weight:             500;
+$bold-weight:               700;
+
+// breakpoints
+$mobile:                    400px;
+$phablet:                   550px;
+$tablet:                    750px;
+$desktop:                   1000px;
+$desktophd:                 1200px;
+
+
+// transition
+$mouse-in:                  0.25s ease-out;
+$mouse-out:                 0.4s ease-in-out;

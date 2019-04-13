@@ -1,0 +1,24 @@
+.main_title {
+  font-family: $text-main;
+  font-weight: $regular-weight;
+  font-size: 1rem;
+  color: $color-main;
+
+  &__link {
+    text-decoration: none;
+    opacity: 1;
+    border-bottom: 1px solid $color-light;
+    transition: 
+      opacity $mouse-out,
+      border-bottom $mouse-out;
+
+    &:hover,
+    &:focus { 
+      opacity: 0.85;
+      border-bottom: 1px solid $color-main;
+      transition: 
+        opacity $mouse-in,
+        border-bottom $mouse-in;
+    }
+  }
+}

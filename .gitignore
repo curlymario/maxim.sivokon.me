@@ -1,0 +1,15 @@
+*.min.css
+*.min.css.map
+css/main.css
+css/main.css.map
+.DS_Store
+.idea
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+*.sublime*
+node_modules/
+npm-debug.*
+Thumbs.db

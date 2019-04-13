@@ -1,0 +1,19 @@
+.main_slogan {
+  font-family: $text-display;
+  font-size: 5rem;
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  opacity: 0.9;
+  font-weight: $medium-weight;
+  color: $text-color-black;
+  word-wrap: break-word;
+
+  // fluid typography
+  @media (min-width: 22.5rem) {
+    font-size: calc(5rem + 1 * ((100vw - 22.5rem) / 4));
+  }
+
+  @media (min-width: 26.5rem) {
+    font-size: 6rem;
+  }
+}

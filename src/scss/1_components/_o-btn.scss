@@ -1,0 +1,34 @@
+.o-btn {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+
+  font-family: $text-ui; 
+  font-weight: $regular-weight;
+  font-size: 1rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  text-decoration: none;
+
+  color: $color-main;
+  border: 1px solid $text-color-gray;
+  background-color: transparent;
+  // border-radius: 2.25em;
+
+  transition: 
+    color $mouse-out, 
+    border $mouse-out,
+    background-color $mouse-out;
+    
+  &:hover,
+  &:focus {
+    color: $color-light;
+    border: 1px solid $color-main;
+    background-color: $color-main;
+    transition: 
+      color $mouse-in, 
+      border $mouse-in,
+      background-color $mouse-in;
+  }
+
+}
