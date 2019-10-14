@@ -1,13 +1,10 @@
 // colors
-$main-color:                #4F0586;
-
-$grad-start:                #71028C;
-$grad-stop:                 #000C76;
+$main-color:                #6E203D;
 
 $color-light:               #FFFEFD;
 
-$text-color:                #333333;
-$text-color-gray:           #5D6379;
+$text-color:                #232332;
+$text-color-gray:           #8F8F95;
 
 // font-family
 $main-family:               'IBM Plex Sans', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
@@ -16,6 +13,8 @@ $main-family:               'IBM Plex Sans', 'Franklin Gothic Medium', 'Arial Na
 $font-size:                 1rem;
 
 // font-weight:
+$extralight-weight:         200;
+$light-weight:              300;
 $regular-weight:            400;
 $medium-weight:             500;
 $bold-weight:               700;

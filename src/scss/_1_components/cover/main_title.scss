@@ -1,0 +1,10 @@
+.main_title {
+  font-family: $main-family;
+  font-weight: $medium-weight;
+  font-size: $font-size;
+  color: $main-color;
+
+  &__link {
+    text-decoration: none;
+  }
+}

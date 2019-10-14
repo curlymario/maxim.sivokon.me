@@ -1,37 +1,35 @@
 <!DOCTYPE html>
 <html lang="ru">
+  
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Максим Сивоконь — Веб-дизайнер, проектировщик интерфейсов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700&amp;subset=cyrillic">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,300,400,500&amp;subset=cyrillic">
   <link rel="stylesheet" type="text/css" href="css/main.min.css">
 </head>
+
 <body>
-  <header class="l-header o-section">
-    <p class="l-header__logo c-logo">Максим Владиславович</p>
-  </header>
-  <main>
-    <section class="l-cover o-section">
-      <h1 class="l-cover__title c-title">
-        Я <span class="c-title__colored">проектирую</span>
-        <span class="c-title__dynamic" id="title-typed">интерфейсы</span>
-      </h1>
-      <ul class="c-links-list main_navigation">
-        <li class="c-links-list__item">
-          <a class="c-links-list__link o-link" href="https://behance.net/maximsivokon">Портфолио</a>
-        </li>
-      </ul>
-      <ul class="c-links-list main_contacts">
-        <li class="c-links-list__item">
-          <a class="c-links-list__link o-link" href="mailto:maxim@sivokon.me" target="_blank">Email</a>
-        </li>
-        <li class="c-links-list__item">
-          <a class="c-links-list__link o-link" href="https://t.me/maximsivokon">Telegram</a>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <header class="cover">
+    <h1 class="cover__title  main_title"><a class="main_title__link" href="/">Максим Владиславович</a></h1>
+    <p class="cover__slogan">
+      Я проектирую <span class="title__dynamic" id="title-typed">интерфейсы</span>
+    </p>
+
+    <nav><ul class="cover__nav">
+      <li class="cover__navlink"><a class="o-link  --external" href="https://behance.net/maximsivokon">Портфолио</a></li>
+      <li class="cover__navlink"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/">Резюме</a></li>
+    </ul></nav>
+
+    <ul class="cover__contacts">
+      <li class="cover__contactlink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
+      <li class="cover__contactlink"><a class="o-btn"  href="https://t.me/maximsivokon">Telegram</a></li>
+    </ul>
+
 </body>
 </html>

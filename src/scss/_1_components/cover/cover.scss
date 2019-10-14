@@ -1,0 +1,33 @@
+.cover {
+  height: 100%;
+  position: relative;
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+
+  background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+
+  // &__title {}
+
+  &__slogan {
+    font-family: $main-family;
+    font-size: 5.5rem;
+    line-height: 0.9;
+    font-weight: extralight-weight;
+    color: $text-color;
+  }
+
+  &__nav {
+    padding: 0;
+    list-style: none;
+  }
+
+  // &__navlink {}
+
+  &__contacts {
+    padding: 0;
+    list-style: none;
+    // &__item {}
+  }
+
+}
