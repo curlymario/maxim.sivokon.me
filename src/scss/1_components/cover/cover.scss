@@ -6,15 +6,15 @@
 
   background: $color-light url("../img/bg-noise-300x300.png") repeat;
 
+  font-family: $main-family; 
 
-  // &__title {}
+
+  &__title {
+    margin-bottom: 1.25em;
+  }
 
   &__slogan {
-    font-family: $main-family;
-    font-size: 5.5rem;
-    line-height: 0.9;
-    font-weight: extralight-weight;
-    color: $text-color;
+    margin-bottom: 0.5em;
   }
 
   &__nav {
@@ -22,12 +22,17 @@
     list-style: none;
   }
 
-  // &__navlink {}
+  &__navlink {
+    margin-block-start: 0.66em;
+    margin-block-end: 0.825em;
+  }
 
   &__contacts {
     padding: 0;
     list-style: none;
-    // &__item {}
   }
 
+  &__contactlink {
+    margin: 1em auto;
+  }
 }

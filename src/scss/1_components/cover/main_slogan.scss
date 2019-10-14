@@ -1,0 +1,10 @@
+.main_slogan {
+  font-family: $main-family;
+  font-size: 5.5rem;
+  line-height: 0.9;
+  font-weight: $extralight-weight;
+  color: $text-color;
+  word-wrap: break-word;
+
+  // &__dynamic {}
+}
