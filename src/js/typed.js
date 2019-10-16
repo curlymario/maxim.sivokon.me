@@ -9,4 +9,4 @@ var options = {
   loop: true,
 }
 
-var typed = new Typed("#title-typed", options);
+var typed = new Typed("#slogan-typed", options);
