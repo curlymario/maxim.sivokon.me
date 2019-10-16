@@ -20,19 +20,26 @@
   &__nav {
     padding: 0;
     list-style: none;
-  }
 
-  &__navlink {
-    margin-top: 1em;
-    margin-bottom: 2em;
+    &link {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 1em;
+      margin-top: 1em;
+      margin-bottom: 0em;
+    }
   }
 
   &__contacts {
     padding: 0;
     list-style: none;
-  }
 
-  &__contactlink {
-    margin: 1em auto;
+    &link {
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 1em;
+      margin-top: 1em;
+      margin-bottom: 0em;
+    }
   }
 }
