@@ -26,17 +26,24 @@
   }
 
   &__nav {
-    grid-area: navigation;
-    padding: 0;
-    margin-bottom: 2em;
-    list-style: none;
+    &bar {
+      grid-area: navigation;
+      margin-bottom: 1em;
+    }
 
-    &link {
+    &list {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    
+      display: flex;
+      align-self: start;
+    }
+  
+    &item {
       display: inline-block;
-      margin-left: 0;
       margin-right: 1em;
-      margin-top: 0em;
-      margin-bottom: 0em;
+      margin-bottom: 0.5em;
     }
   }
 
@@ -64,9 +71,19 @@
     grid-gap: 0 0;
 
     &__nav {
-      align-self: start;
-      display: flex;
-      transform: rotate(90deg);
+      &list {
+        transform: rotate(90deg);
+        @supports (writing-mode: vertical-rl) {
+          transform: none;
+          writing-mode: vertical-rl
+        }
+      }
+
+      &item {
+        margin-right: 0;
+        margin-bottom: 1em;
+        margin-left: 0.5em;
+      }
     }
 
     &__contacts {
