@@ -19,8 +19,8 @@
     -1px -1px $color-light;
 
   transition: 
-    color 0.4s ease-in-out, 
-    border 0.4s ease-in-out;
+    color $mouse-out, 
+    border $mouse-out;
     
   &:hover,
   &:focus {
@@ -31,7 +31,7 @@
       border-block-end: 1px solid $main-color;
     }
     transition: 
-      color 0.25s ease-out, 
-      border 0.25s ease-out;
+      color $mouse-in, 
+      border $mouse-in;
   }
 }
