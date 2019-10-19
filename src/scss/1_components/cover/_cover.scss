@@ -23,6 +23,7 @@
     min-width: 0;
     grid-area: slogan;
     margin-bottom: 0.25em;
+    padding-right: 1rem;
   }
 
   &__nav {
@@ -82,7 +83,7 @@
       &item {
         margin-right: 0;
         margin-bottom: 1em;
-        margin-left: 0.5em;
+        margin-left: 0.1em;
       }
     }
 
@@ -93,7 +94,7 @@
 
     &__logo {
       grid-area: logo;
-      padding: 1.2em 0.5em;
+      padding: 1.2em 0;
     }
   }
 }
