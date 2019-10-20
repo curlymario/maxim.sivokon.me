@@ -1,8 +1,8 @@
 .cover {
   min-height: 100%;
   padding-top: 1.2em;
-  padding-left: 1.2em;
-  padding-right: 0.4em;
+  padding-left: 0.75em;
+  padding-right: 0.45em;
 
   background: $color-light url("../img/bg-noise-300x300.png") repeat;
   overflow: hidden;
@@ -15,7 +15,7 @@
           "slogan navigation" auto
           "contacts logo" 7.5em
           / auto 2em;
-    grid-gap: 0 0;
+    grid-gap: 0 1.5rem;
   }
 
   &__title {
@@ -31,7 +31,6 @@
     grid-area: slogan;
     min-width: 0; // fixes grid overflow
     margin-bottom: 0.25em;
-    padding-right: 1rem;
   }
 
   &__navbar {
