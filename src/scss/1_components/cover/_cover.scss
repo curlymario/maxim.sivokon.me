@@ -9,6 +9,14 @@
 
   font-family: $main-family; 
 
+  @supports (display: grid) {
+    display: grid;
+    grid: "title lang" 2.625em
+          "slogan navigation" auto
+          "contacts logo" 7.5em
+          / auto 2em;
+    grid-gap: 0 0;
+  }
 
   &__title {
     grid-area: title;
@@ -20,32 +28,15 @@
   }
 
   &__slogan {
-    min-width: 0;
     grid-area: slogan;
+    min-width: 0; // fixes grid overflow
     margin-bottom: 0.25em;
     padding-right: 1rem;
   }
 
-  &__nav {
-    &bar {
-      grid-area: navigation;
-      margin-bottom: 1em;
-    }
-
-    &list {
-      padding: 0;
-      margin: 0;
-      list-style: none;
-    
-      display: flex;
-      align-self: start;
-    }
-  
-    &item {
-      display: inline-block;
-      margin-right: 1em;
-      margin-bottom: 0.5em;
-    }
+  &__navbar {
+    grid-area: navigation;
+    margin-bottom: 1em;
   }
 
   &__contacts {
@@ -53,6 +44,11 @@
     padding: 0;
     margin-bottom: 2em;
     list-style: none;
+
+    @supports (display: grid) {
+      align-self: start;
+      margin-bottom: 3.25em;
+    }
 
     &link {
       display: inline-block;
@@ -63,56 +59,26 @@
     }
   }
 
-  @supports (display: grid) {
-    display: grid;
-    grid: "title lang" 2.625em
-          "slogan navigation" auto
-          "contacts logo" 7.5em
-          / auto 2em;
-    grid-gap: 0 0;
+  &__logo {
+    grid-area: logo;
+    padding: 1.2em 0;
+    opacity: 0.5;
+    color: $text-color-black;
+    fill: $text-color-black;
+    transition: 
+      opacity $mouse-out, 
+      color $mouse-out,
+      fill $mouse-out;
 
-    &__nav {
-      &list {
-        transform: rotate(90deg);
-        @supports (writing-mode: vertical-rl) {
-          transform: none;
-          writing-mode: vertical-rl
-        }
-      }
-
-      &item {
-        margin-right: 0;
-        margin-bottom: 1em;
-        margin-left: 0.1em;
-      }
-    }
-
-    &__contacts {
-      align-self: start;
-      margin-bottom: 3.25em;
-    }
-
-    &__logo {
-      grid-area: logo;
-      padding: 1.2em 0;
-      opacity: 0.5;
-      color: $text-color-black;
-      fill: $text-color-black;
+    &:hover,
+    &:focus {
+      opacity: 1;
+      color: $color-main;
+      fill: $color-main;
       transition: 
-        opacity $mouse-out, 
-        color $mouse-out,
-        fill $mouse-out;
-
-      &:hover,
-      &:focus {
-        opacity: 1;
-        color: $color-main;
-        fill: $color-main;
-        transition: 
-          opacity $mouse-in,
-          color $mouse-in, 
-          fill $mouse-in;
-      }
+        opacity $mouse-in,
+        color $mouse-in, 
+        fill $mouse-in;
     }
   }
 }
