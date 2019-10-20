@@ -1,13 +1,13 @@
 .main_title {
   font-family: $main-family;
-  font-weight: $medium-weight;
+  font-weight: $regular-weight;
   font-size: $font-size;
   color: $main-color;
 
   &__link {
     text-decoration: none;
     opacity: 1;
-    border-bottom: 1.5px solid transparent;
+    border-bottom: 1px solid $color-light;
     transition: 
       opacity $mouse-out,
       border-bottom $mouse-out;
@@ -15,7 +15,7 @@
     &:hover,
     &:focus { 
       opacity: 0.85;
-      border-bottom: 1.5px solid $main-color;
+      border-bottom: 1px solid $main-color;
       transition: 
         opacity $mouse-in,
         border-bottom $mouse-in;
