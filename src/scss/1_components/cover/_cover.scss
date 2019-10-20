@@ -96,8 +96,8 @@
       grid-area: logo;
       padding: 1.2em 0;
       opacity: 0.5;
-      color: $text-color;
-      fill: $text-color;
+      color: $text-color-black;
+      fill: $text-color-black;
       transition: 
         opacity $mouse-out, 
         color $mouse-out,
@@ -106,8 +106,8 @@
       &:hover,
       &:focus {
         opacity: 1;
-        color: $main-color;
-        fill: $main-color;
+        color: $color-main;
+        fill: $color-main;
         transition: 
           opacity $mouse-in,
           color $mouse-in, 

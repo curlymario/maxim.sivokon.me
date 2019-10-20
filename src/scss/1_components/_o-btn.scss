@@ -9,7 +9,7 @@
 
   text-decoration: none;
 
-  color: $main-color;
+  color: $color-main;
   border: 1px solid $text-color-gray;
   background-color: transparent;
   // border-radius: 2.25em;
@@ -22,8 +22,8 @@
   &:hover,
   &:focus {
     color: $color-light;
-    border: 1px solid $main-color;
-    background-color: $main-color;
+    border: 1px solid $color-main;
+    background-color: $color-main;
     transition: 
       color $mouse-in, 
       border $mouse-in,

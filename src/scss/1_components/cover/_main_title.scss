@@ -2,7 +2,7 @@
   font-family: $main-family;
   font-weight: $regular-weight;
   font-size: $font-size;
-  color: $main-color;
+  color: $color-main;
 
   &__link {
     text-decoration: none;
@@ -15,7 +15,7 @@
     &:hover,
     &:focus { 
       opacity: 0.85;
-      border-bottom: 1px solid $main-color;
+      border-bottom: 1px solid $color-main;
       transition: 
         opacity $mouse-in,
         border-bottom $mouse-in;
