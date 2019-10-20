@@ -2,7 +2,7 @@
   min-height: 100%;
   padding-top: 1.2em;
   padding-left: 0.75em;
-  padding-right: 0.45em;
+  padding-right: 0.75em;
 
   background: $color-light url("../img/bg-noise-300x300.png") repeat;
   overflow: hidden;
@@ -14,7 +14,7 @@
     grid: "title lang" 2.625em
           "slogan navigation" auto
           "contacts logo" 7.5em
-          / auto 2em;
+          / auto auto;
     grid-gap: 0 1.5rem;
   }
 
