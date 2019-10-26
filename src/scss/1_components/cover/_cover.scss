@@ -25,16 +25,19 @@
 
   &__lang {
     grid-area: lang;
+    justify-self: end;
   }
 
   &__slogan {
     grid-area: slogan;
     min-width: 0; // fixes grid overflow
     margin-bottom: 0.25em;
+    max-width: 6.75em;
   }
 
   &__navbar {
     grid-area: navigation;
+    justify-self: end;
     margin-bottom: 1em;
   }
 
@@ -60,6 +63,7 @@
 
   &__logo {
     grid-area: logo;
+    justify-self: end;
     padding: 1.2em 0;
     opacity: 0.5;
     color: $text-color-black;

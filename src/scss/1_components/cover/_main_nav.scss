@@ -6,6 +6,7 @@
   font-weight: $regular-weight;
 
   display: flex;
+  flex-direction: row;
   align-self: start;
 
   @supports (display: grid) {
@@ -14,7 +15,14 @@
 
   @supports (display: grid) and (writing-mode: vertical-rl) {
     transform: none; 
-    writing-mode: vertical-rl
+    writing-mode: vertical-rl;
+  }
+
+  @media (min-width: $phablet) { 
+    flex-direction: column;
+    transform: none; 
+    writing-mode: horizontal-tb;
+    text-align: right;
   }
 
   &__item {
