@@ -13,8 +13,8 @@
     display: grid;
     grid: "title lang" 2.625em
           "slogan navigation" auto
-          "contacts logo" 7.5em
-          / auto auto;
+          "contacts logo" min-content
+          / auto max-content;
     grid-gap: 0 1.5rem;
   }
 
@@ -45,12 +45,16 @@
   &__contacts {
     grid-area: contacts;
     padding: 0;
+    margin-top: 0;
     margin-bottom: 2em;
     list-style: none;
 
     @supports (display: grid) {
       align-self: start;
-      margin-bottom: 3.25em;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 0;
     }
 
     &link {
