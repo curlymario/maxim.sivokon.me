@@ -3,6 +3,11 @@ html, body {
   min-width: 17.5em;
 }
 
+@media (min-width: $tablet) {
+  html { 
+    font-size: 105%;
+  }
+}
 @media (min-width: $desktop) {
   html { 
     font-size: 110%;
