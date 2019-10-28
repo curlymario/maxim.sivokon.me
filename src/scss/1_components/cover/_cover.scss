@@ -93,3 +93,19 @@
     }
   }
 }
+
+html {
+  background: $color-light url("../img/bg-noise-300x300.png") repeat;
+}
+
+.cover {
+  max-width: $desktop;
+  margin: 0 auto;
+  background: none;
+
+  @media (min-width: $desktop) {
+    margin-top: 10vh;
+    min-height: 0;
+    height: 50vh;
+  }
+}
