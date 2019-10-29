@@ -106,6 +106,7 @@ html {
   @media (min-width: $desktop) {
     margin-top: 10vh;
     min-height: 0;
-    height: 50vh;
+    height: 60vh;
+    overflow: visible;
   }
 }
