@@ -11,9 +11,9 @@
 
   @supports (display: grid) {
     display: grid;
-    grid: "title lang" 2.625em
+    grid: "title navigation" 2.625em
           "slogan navigation" auto
-          "contacts logo" min-content
+          "contacts lang" min-content
           / auto max-content;
     grid-gap: 0 1.5rem;
   }
@@ -22,11 +22,6 @@
     grid-area: title;
     margin-bottom: 1.25em;
     margin-left: 0.5em;
-  }
-
-  &__lang {
-    grid-area: lang;
-    justify-self: end;
   }
 
   &__slogan {
@@ -67,30 +62,9 @@
     }
   }
 
-  &__logo {
-    grid-area: logo;
+  &__lang {
+    grid-area: lang;
     justify-self: end;
-    padding: 0;
-    margin-top: 0.2em;
-    margin-right: 0.2em;
-    opacity: 0.5;
-    color: $text-color-black;
-    fill: $text-color-black;
-    transition: 
-      opacity $mouse-out, 
-      color $mouse-out,
-      fill $mouse-out;
-
-    &:hover,
-    &:focus {
-      opacity: 1;
-      color: $color-main;
-      fill: $color-main;
-      transition: 
-        opacity $mouse-in,
-        color $mouse-in, 
-        fill $mouse-in;
-    }
   }
 }
 
