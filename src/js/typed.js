@@ -1,7 +1,7 @@
 import Typed from 'typed.js';
 
 var options = {
-  strings: ["интерфейсы", "веб-сайты", "приложения","пользовательский опыт","цифровые продукты"],
+  stringsElement: '#slogan-strings',
   typeSpeed: 80,
   backSpeed: 20,
   backDelay: 1000,
