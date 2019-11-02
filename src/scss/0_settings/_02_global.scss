@@ -5,7 +5,7 @@ html, body {
 
 @media (min-width: $tablet) {
   html { 
-    font-size: 105%;
+    font-size: calc(100% + 1.6 * ((100vw - 750px) / 250));
   }
 }
 @media (min-width: $desktop) {
