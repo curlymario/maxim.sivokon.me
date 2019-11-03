@@ -27,8 +27,18 @@
   &__slogan {
     grid-area: slogan;
     min-width: 0; // fixes grid overflow
-    margin-bottom: 0.25em;
     max-width: 6.75em;
+    margin-bottom: 0.25em;
+    
+    @media (min-width: $mobile) and (min-height: $phablet) {
+      align-self: end;
+      min-height: 80%;
+    }
+
+    @media (min-width: $tablet) {
+      align-self: end;
+      min-height: 60%;
+    }
   }
 
   &__navbar {
@@ -68,19 +78,19 @@
   }
 }
 
-html {
-  background: $color-light url("../img/bg-noise-300x300.png") repeat;
-}
+// html {
+//   background: $color-light url("../img/bg-noise-300x300.png") repeat;
+// }
 
-.cover {
-  max-width: $desktop;
-  margin: 0 auto;
-  background: none;
+// .cover {
+//   max-width: $desktop;
+//   margin: 0 auto;
+//   background: none;
 
-  @media (min-width: $desktop) {
-    margin-top: 10vh;
-    min-height: 0;
-    height: 60vh;
-    overflow: visible;
-  }
-}
+//   @media (min-width: $desktop) {
+//     margin-top: 10vh;
+//     min-height: 0;
+//     height: 60vh;
+//     overflow: visible;
+//   }
+// }
