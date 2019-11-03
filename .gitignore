@@ -13,6 +13,5 @@ css/main.css.map
 node_modules/
 npm-debug.*
 Thumbs.db
-package-lock.json
-package.json
-webpack.config.js
+js/main.js
+js/main.js.map
