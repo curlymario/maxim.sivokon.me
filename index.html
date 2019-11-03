@@ -87,5 +87,27 @@
     <li> user experience</li>
     <li> digital products</li>
   </ul>
+
+  <script>
+    // media query event handler
+    if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 750px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+    }
+    // media query change
+    function WidthChange(mq) {
+    if (mq.matches) {
+      // adding the script tag to the head
+      var head = document.getElementsByTagName('head')[0];
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.src = "js/main.js";
+
+      // fire the loading
+      head.appendChild(script);
+      }
+    }
+  </script>
 </body>
 </html>
