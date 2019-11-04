@@ -27,7 +27,6 @@
   &__slogan {
     grid-area: slogan;
     min-width: 0; // fixes grid overflow
-    max-width: 6.75em;
     margin-bottom: 0.25em;
     
     @media (min-width: $mobile) and (min-height: $phablet) {
