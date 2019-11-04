@@ -15,3 +15,5 @@ npm-debug.*
 Thumbs.db
 js/main.js
 js/main.js.map
+ru/js/main.js
+ru/js/main.js.map
