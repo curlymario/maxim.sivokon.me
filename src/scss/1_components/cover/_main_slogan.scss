@@ -9,11 +9,13 @@
   html[lang="en"] & {
     line-height: 1;
     letter-spacing: -0.01em;
+    max-width: 7.6em;
   }
 
   html[lang="ru"] & {
     line-height: 0.95;
     letter-spacing: -0.04em;
+    max-width: 10em;
   }
 
    // magical fluid typography
