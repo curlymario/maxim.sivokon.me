@@ -1,19 +1,31 @@
 .main_slogan {
   font-family: $text-display;
-  font-size: 5rem;
-  line-height: 0.95;
-  letter-spacing: -0.04em;
   opacity: 0.9;
   font-weight: $medium-weight;
   color: $text-color-black;
   word-wrap: break-word;
-
-  // fluid typography
-  @media (min-width: 22.5rem) {
-    font-size: calc(5rem + 1 * ((100vw - 22.5rem) / 4));
+  
+  // language type settings
+  html[lang="en"] & {
+    line-height: 1;
+    letter-spacing: -0.01em;
+    max-width: 7.6em;
   }
 
+  html[lang="ru"] & {
+    line-height: 0.95;
+    letter-spacing: -0.04em;
+    max-width: 10em;
+  }
+
+   // magical fluid typography
+  font-size: 4.4rem;
+
   @media (min-width: 26.5rem) {
-    font-size: 6rem;
+    font-size: calc(4.4rem + 1.1 * ((100vw - 26.5rem) / 8));
+  }
+
+  @media (min-width: 34.5rem) {
+    font-size: 5.5rem;
   }
 }

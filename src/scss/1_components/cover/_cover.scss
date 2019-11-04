@@ -11,11 +11,11 @@
 
   @supports (display: grid) {
     display: grid;
-    grid: "title lang" 2.625em
+    grid: "title navigation" 2.625em
           "slogan navigation" auto
-          "contacts logo" min-content
+          "contacts lang" min-content
           / auto max-content;
-    grid-gap: 0 1.5rem;
+    grid-gap: 0 1rem;
   }
 
   &__title {
@@ -24,22 +24,26 @@
     margin-left: 0.5em;
   }
 
-  &__lang {
-    grid-area: lang;
-    justify-self: end;
-  }
-
   &__slogan {
     grid-area: slogan;
     min-width: 0; // fixes grid overflow
     margin-bottom: 0.25em;
-    max-width: 6.75em;
+    
+    @media (min-width: $mobile) and (min-height: $phablet) {
+      align-self: end;
+      min-height: 80%;
+    }
+
+    @media (min-width: $tablet) {
+      align-self: end;
+      min-height: 60%;
+    }
   }
 
   &__navbar {
     grid-area: navigation;
     justify-self: end;
-    margin-top: 1.5em;
+    margin-top: 0;
     margin-bottom: 1em;
   }
 
@@ -67,46 +71,25 @@
     }
   }
 
-  &__logo {
-    grid-area: logo;
+  &__lang {
+    grid-area: lang;
     justify-self: end;
-    padding: 0;
-    margin-top: 0.2em;
-    margin-right: 0.2em;
-    opacity: 0.5;
-    color: $text-color-black;
-    fill: $text-color-black;
-    transition: 
-      opacity $mouse-out, 
-      color $mouse-out,
-      fill $mouse-out;
-
-    &:hover,
-    &:focus {
-      opacity: 1;
-      color: $color-main;
-      fill: $color-main;
-      transition: 
-        opacity $mouse-in,
-        color $mouse-in, 
-        fill $mouse-in;
-    }
   }
 }
 
-html {
-  background: $color-light url("../img/bg-noise-300x300.png") repeat;
-}
+// html {
+//   background: $color-light url("../img/bg-noise-300x300.png") repeat;
+// }
 
-.cover {
-  max-width: $desktop;
-  margin: 0 auto;
-  background: none;
+// .cover {
+//   max-width: $desktop;
+//   margin: 0 auto;
+//   background: none;
 
-  @media (min-width: $desktop) {
-    margin-top: 10vh;
-    min-height: 0;
-    height: 60vh;
-    overflow: visible;
-  }
-}
+//   @media (min-width: $desktop) {
+//     margin-top: 10vh;
+//     min-height: 0;
+//     height: 60vh;
+//     overflow: visible;
+//   }
+// }
