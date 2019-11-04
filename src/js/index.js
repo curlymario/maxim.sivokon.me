@@ -1,13 +1,21 @@
 import Typed from 'typed.js';
 
+document.getElementById("slogan-typed").innerHTML = '';
+
 var options = {
-  stringsElement: "#typed-strings",
+  strings: [
+    " interfaces",
+    " websites",
+    " applications",
+    " user experience",
+    " digital products"
+  ],
   typeSpeed: 80,
   backSpeed: 20,
-  backDelay: 1000,
-  startDelay: 1000,
+  backDelay: 2000,
+  startDelay: 0,
   loop: true,
-  smartBackspace: false,
+  smartBackspace: true,
 }
 
 var typed = new Typed("#slogan-typed", options);
