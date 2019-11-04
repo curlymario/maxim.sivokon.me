@@ -13,18 +13,7 @@ css/main.css.map
 node_modules/
 npm-debug.*
 Thumbs.db
-<<<<<<< HEAD
-package-lock.json
-<<<<<<< HEAD
-=======
-package.json
-<<<<<<< HEAD
-webpack.config.js
->>>>>>> conflicting OS setups
-=======
-webpack.config.js
->>>>>>> asdfasdfasdf
-=======
 js/main.js
 js/main.js.map
->>>>>>> reconfigured webpack
+ru/js/main.js
+ru/js/main.js.map
