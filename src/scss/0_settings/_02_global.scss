@@ -11,6 +11,11 @@ html, body {
 }
 @media (min-width: $desktop) {
   html { 
-    font-size: 110%;
+    font-size: calc(110% + 8.8 * ((100vw - 1000px) / 1000));
+  }
+}
+@media (min-width: $fullhd) {
+  html { 
+    font-size: 165%;
   }
 }
