@@ -1,0 +1,38 @@
+.about {
+  position: relative;
+  padding: 1.2em;
+  padding-top: 2.4em;
+
+  background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+  &__heading {
+    font-family: $text-display;
+    font-weight: $medium-weight;
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: $color-main;
+    opacity: 0.1;
+
+    position: absolute;
+    top: 0;
+    left: -1.8rem;
+    writing-mode: vertical-lr;
+  }
+
+  &__paragraph {
+    font-family: $text-content;
+    font-weight: $regular-weight;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: $text-color-black;
+
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    max-width: 32em;
+
+    &:first-of-type {
+      font-size: 1.5rem;
+      font-weight: $medium-weight;
+    }
+  }
+}
