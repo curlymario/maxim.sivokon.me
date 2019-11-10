@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-<<<<<<< HEAD
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --progress --mode=production",
-    "devbuild": "webpack --progress"
-=======
   "dependencies": {
     "@babel/core": "^7.6.4",
     "fibers": "^4.0.2",
@@ -24,16 +18,13 @@
     "css-loader": "^3.2.0",
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0",
-    "style-loader": "^1.0.0"
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
-    "build": "webpack --config webpack.config.js"
->>>>>>> reconfigured webpack
-=======
     "build": "webpack --config webpack.config.js && webpack --config webpack.config.ru.js"
->>>>>>> separate js file for ru version
   },
   "repository": {
     "type": "git",
@@ -45,13 +36,5 @@
   "bugs": {
     "url": "https://gitlab.com/curlymario/maxim.sivokon.me/issues"
   },
-<<<<<<< HEAD
-  "homepage": "https://gitlab.com/curlymario/maxim.sivokon.me#readme",
-  "devDependencies": {
-    "webpack": "^4.41.2",
-    "webpack-cli": "^3.3.9"
-  }
-=======
   "homepage": "https://gitlab.com/curlymario/maxim.sivokon.me#readme"
->>>>>>> reconfigured webpack
 }
