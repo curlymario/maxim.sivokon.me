@@ -1,7 +1,5 @@
 html, body {
   height: 100%;
-  min-width: 17.5em;
-  font-family: $text-main; 
 }
 
 @media (min-width: $tablet) {
@@ -11,6 +9,18 @@ html, body {
 }
 @media (min-width: $desktop) {
   html { 
-    font-size: 110%;
+    font-size: calc(110% + 8.8 * ((100vw - 1000px) / 1000));
   }
+}
+@media (min-width: $fullhd) {
+  html { 
+    font-size: 165%;
+  }
+}
+
+
+body {
+  min-width: 17.5em;
+  font-family: $text-main; 
+  background: $color-light url("../img/bg-noise-300x300.png") repeat;
 }
