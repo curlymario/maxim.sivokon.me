@@ -1,7 +1,8 @@
 .about {
   position: relative;
-  padding: 1.2em;
-  padding-top: 2.4em;
+  padding-top: 2.4rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
 
   &__heading {
     font-family: $text-display;
@@ -24,13 +25,17 @@
     line-height: 1.6;
     color: $text-color-black;
 
-    padding-left: 1rem;
+    padding-left: 0.45rem;
     margin-bottom: 1rem;
     max-width: 32em;
 
     &:first-of-type {
       font-size: 1.5rem;
       font-weight: $medium-weight;
+    }
+
+    @media (min-width: $phablet) {
+      padding-left: 1.5rem;
     }
   }
 }
