@@ -19,10 +19,10 @@
   }
 
    // magical fluid typography
-  font-size: 4.4rem;
+  font-size: 4rem;
 
-  @media (min-width: 26.5rem) {
-    font-size: calc(4.4rem + 1.1 * ((100vw - 26.5rem) / 8));
+  @media (min-width: 25rem) {
+    font-size: calc(4rem + 1.5 * ((100vw - 25rem) / 9.5));
   }
 
   @media (min-width: 34.5rem) {
