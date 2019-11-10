@@ -4,17 +4,17 @@ html, body {
 
 @media (min-width: $tablet) {
   html { 
-    font-size: calc(100% + 1.6 * ((100vw - 750px) / 250));
+    font-size: calc(100% + 0.8 * ((100vw - 750px) / 250));
   }
 }
 @media (min-width: $desktop) {
   html { 
-    font-size: calc(110% + 8.8 * ((100vw - 1000px) / 1000));
+    font-size: calc(105% + 6.4 * ((100vw - 1000px) / 1000));
   }
 }
 @media (min-width: $fullhd) {
   html { 
-    font-size: 165%;
+    font-size: 145%;
   }
 }
 
