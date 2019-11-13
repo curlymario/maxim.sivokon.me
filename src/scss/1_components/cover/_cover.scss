@@ -1,10 +1,4 @@
 .cover {
-  position: relative;
-  min-height: 100%;
-  padding-top: 1.2rem;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-
   font-family: $text-main; 
 
   @supports (display: grid) {
@@ -14,18 +8,6 @@
           "contacts lang" min-content
           / auto max-content;
     grid-gap: 0 0.75rem;
-  }
-
-  @media (min-width: $tablet) {
-    min-height: $phablet;
-    padding-left: 1.25rem;
-  }
-
-  @media (min-width: $desktop) {
-    min-height: 100%;
-    width: 65%;
-    padding-left: 0.25rem;
-    padding-right: 0.5rem;
   }
 
   &__title {
