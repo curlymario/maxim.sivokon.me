@@ -10,8 +10,8 @@ var options = {
     " пользовательский опыт",
     " цифровые продукты"
   ],
-  typeSpeed: 80,
-  backSpeed: 20,
+  typeSpeed: 100,
+  backSpeed: 50,
   backDelay: 2000,
   startDelay: 0,
   loop: true,
