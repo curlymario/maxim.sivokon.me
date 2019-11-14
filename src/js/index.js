@@ -16,6 +16,7 @@ var options = {
   startDelay: 0,
   loop: true,
   smartBackspace: true,
+  showCursor: false,
 }
 
 var typed = new Typed("#slogan-typed", options);
