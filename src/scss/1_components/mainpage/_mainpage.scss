@@ -1,0 +1,64 @@
+.mainpage {
+  min-width: 17.5em;
+  font-family: $text-main; 
+  background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+  &__cover {
+    padding-top: 1.2rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    position: relative;
+    min-height: 100%;
+
+    @media (min-width: $tablet) {
+      min-height: $phablet;
+      padding-left: 1.25rem;
+    }
+
+    @media (min-width: $desktop) {
+      min-height: $tablet;
+      padding-left: 0.25rem;
+      padding-right: 0.5rem;
+    }
+
+    @media (min-width: $desktop) and (orientation: landscape) {
+      min-height: 100%;
+      width: 65%;
+    }
+
+    @media (min-width: $desktophd) and (orientation: landscape) {
+      width: 46.55rem;
+    }
+  }
+
+
+  &__portrait {
+    padding-left: 0.7rem;
+    padding-bottom: 2.4rem;
+  
+    @media (min-width: $phablet) {
+      padding-left: 1.75rem;
+    }
+  
+    @media (min-width: $desktop) and (orientation: landscape) {
+      position: fixed;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 35%;
+      padding: 0;
+    }
+
+    @media (min-width: $desktophd) and (orientation: landscape) {
+      width: calc(100% - 46.55rem);
+    }
+  }
+
+
+  &__about {
+    padding-top: 2.4rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    padding-bottom: 3.2rem;
+  }
+}

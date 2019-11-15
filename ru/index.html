@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" itemscope itemtype="http://schema.org/WebPage">
   
 <head>
   <meta charset="utf-8">
@@ -7,7 +7,15 @@
   <title>Максим Сивоконь — Веб-дизайнер, проектировщик интерфейсов</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- generics -->
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Максим Владиславович" />
+  <meta property="og:description" content="Веб-дизайнер, проектировщик интерфейсов" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:url" content="https://maxim.sivokon.me/ru" />
+  <meta property="og:image" content="../img/og.jpg" />
+
+  <!-- Icons: generics -->
   <link rel="icon" href="../img/favicon/favicon-32.png" sizes="32x32">
   <link rel="icon" href="../img/favicon/favicon-96.png" sizes="96x96">
   <link rel="icon" href="../img/favicon/favicon-128.png" sizes="128x128">
@@ -60,34 +68,34 @@
   </script>
 </head>
 
-<body>
-  <header class="cover">
-    <h1 class="cover__title  main_title"><a class="main_title__link" href="/ru/">Максим Владиславович</a></h1>
+<body class="mainpage" itemscope itemtype="http://schema.org/Person" itemprop="author">
+  <header class="mainpage__cover cover">
+    <h1 class="cover__title  main_title" itemprop="name"><a class="main_title__link" href="/ru/"><span itemprop="givenName">Максим</span> Владиславович<meta itemprop="familyName" content="Сивоконь" /></a></h1>
     
-    <p class="cover__slogan  main_slogan">
+    <p class="cover__slogan  main_slogan" itemprop="hasOccupation abstract speakable">
       Я проектирую <span class="main_slogan__dynamic" id="slogan-typed">интерфейсы</span>
     </p>
     <nav class="cover__navbar"><ul class="main_nav">
-      <li class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon">Портфолио</a></li>
-      <li class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/">Резюме</a></li>
+      <li class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon" itemprop="url relatedLink">Портфолио</a></li>
+      <li class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/" itemprop="url relatedLink">Резюме</a></li>
     </ul></nav>
 
-    <ul class="cover__contacts">
+    <ul class="cover__contacts" itemprop="contactPoint">
       <li class="cover__contactslink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
-      <li class="cover__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon">Telegram</a></li>
+      <li class="cover__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon" itemprop="url">Telegram</a></li>
     </ul>
 
-    <span class="cover__lang"></span>
+    <span class="cover__lang" itemprop="knowsLanguage relatedLink"></span>
   </header>
 
-  <aside class="portrait">
+  <aside class="mainpage__portrait portrait" itemprop="image primaryImageOfPage">
     <picture>
-      <source media="(min-width: 1500px) and (orientation: landscape)" srcset="img/portrait/v-1750.jpg, img/portrait/v-1750@2x.jpg 2x" sizes="40vw">
-      <source media="(min-width: 1500px)" srcset="img/portrait/1500@2x.jpg" sizes="100vw">
-      <source media="(min-width: 1200px) and (orientation: landscape)" srcset="img/portrait/v-1000.jpg, img/portrait/v-1000@2x.jpg 2x" sizes="40vw">
-      <source media="(min-width: 1200px)" srcset="img/portrait/1500.jpg, img/portrait/1500@2x.jpg 2x" sizes="100vw">
-      <source media="(min-width: 1000px) and (orientation: landscape)" srcset="img/portrait/v-700.jpg, img/portrait/v-700@2x.jpg 2x" sizes="40vw">
-      <source media="(min-width: 1000px)" srcset="img/portrait/1200.jpg, img/portrait/1200@2x.jpg 2x" sizes="100vw">
+      <source media="(min-width: 1500px) and (orientation: landscape)" srcset="../img/portrait/v-1750.jpg, ../img/portrait/v-1750@2x.jpg 2x" sizes="40vw">
+      <source media="(min-width: 1500px)" srcset="../img/portrait/1500@2x.jpg" sizes="100vw">
+      <source media="(min-width: 1200px) and (orientation: landscape)" srcset="../img/portrait/v-1000.jpg, ../img/portrait/v-1000@2x.jpg 2x" sizes="40vw">
+      <source media="(min-width: 1200px)" srcset="../img/portrait/1500.jpg, ../img/portrait/1500@2x.jpg 2x" sizes="100vw">
+      <source media="(min-width: 1000px) and (orientation: landscape)" srcset="../img/portrait/v-700.jpg, ../img/portrait/v-700@2x.jpg 2x" sizes="40vw">
+      <source media="(min-width: 1000px)" srcset="../img/portrait/1200.jpg, ../img/portrait/1200@2x.jpg 2x" sizes="100vw">
       <source media="(min-width: 750px)" srcset="../img/portrait/1000.jpg, ../img/portrait/1000@2x.jpg 2x" sizes="100vw">
       <source media="(min-width: 552px)" srcset="../img/portrait/750.jpg, ../img/portrait/750@2x.jpg 2x" sizes="100vw">
       <source media="(min-width: 400px)" srcset="../img/portrait/552.jpg, ../img/portrait/552@2x.jpg 2x" sizes="100vw">
@@ -96,14 +104,14 @@
     </picture>
   </aside>
 
-  <main class="about" id="about">
+  <main class="mainpage__about about" id="about" itemprop="description about speakable">
     <h1 class="about__heading">Обо мне</h1>
     <p class="about__paragraph">Привет!</p>
-    <p class="about__paragraph">Меня зовут Максим и я дизайнер. Я соединяю бизнес с людьми и людей с технологиями — так, по-крайней мере, я говорю себе каждый день перед сном.</p>
-    <p class="about__paragraph">Я профессионально помогаю людям платить вам деньги за то, что вы классные. Помогаю становиться классными, если вы ещё не. Делаю классные цифровые вещи вместе с классными людьми. Становлюсь класснее сам.</p>
-    <p class="about__paragraph">В свободное от спасения мира время, познаю программирование как способ решения проблем и код как инструмент проектирования; изучаю текст как разновидность интерфейса и шрифт как сложное выразительное средство.</p>
+    <p class="about__paragraph">Меня зовут Максим и я <span itemprop="jobTitle">дизайнер</span>. <span itemprop="makesOffer">Я соединяю бизнес с людьми и людей с технологиями</span> — так, по-крайней мере, я говорю себе каждый день перед сном.</p>
+    <p class="about__paragraph" itemprop="knowsAbout">Я профессионально помогаю людям платить вам деньги за то, что вы классные. Помогаю становиться классными, если вы ещё не. Делаю классные цифровые вещи вместе с классными людьми. Становлюсь класснее сам.</p>
+    <p class="about__paragraph" itemprop="knowsAbout">В свободное от спасения мира время, познаю программирование как способ решения проблем и код как инструмент проектирования; изучаю текст как разновидность интерфейса и шрифт как сложное выразительное средство.</p>
     <p class="about__paragraph">Мои повседневные рабочие инструменты: чёрная гелевая ручка, бумага в клетку, Figma, Adobe Illustrator, VS Code, Mozilla Firefox.</p>
-    <p class="about__paragraph">С 1991 жил на Урале, с 2015 живу в Санкт-Петербурге. С 2006 делаю всякое на комьютере, c 2019 рисую сайты и приложения в компании Деньга.</p>
+    <p class="about__paragraph">С <time itemprop="birthDate" datetime="1991-01-02">1991</time> жил <span itemprop="birthPlace nationality">на Урале</span>, с 2015 живу <span itemprop="homeLocation workLocation">в Санкт-Петербурге</span>. С 2006 делаю всякое на комьютере, c 2019 рисую сайты и приложения в компании <span itemprop="worksFor">Деньга</span>.</p>
     <p class="about__paragraph">Убеждён, что музыка — самая универсальная форма искусства, а видеоигры — самая богатая и сложная.</p>
     <p class="about__paragraph">Люблю чай, пиксели и лис.</p>
     <p class="about__paragraph">С любовью сверстал этот сайт вручную сам (оно и видно)</p>

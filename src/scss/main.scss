@@ -5,11 +5,13 @@
 @import "1_components/o-link";
 @import "1_components/o-btn";
 
+@import "1_components/mainpage/mainpage";
+
 @import "1_components/cover/cover";
 @import "1_components/cover/main_title";
 @import "1_components/cover/main_slogan";
 @import "1_components/cover/main_nav";
 
-@import "1_components/about/_about";
+@import "1_components/about/about";
 
-@import "1_components/portrait/_portrait";
+@import "1_components/portrait/portrait";
