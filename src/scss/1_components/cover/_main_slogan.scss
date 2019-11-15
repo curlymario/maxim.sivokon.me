@@ -28,4 +28,8 @@
   @media (min-width: 34.5rem) {
     font-size: 5.5rem;
   }
+
+  &__dynamic {
+    color: $color-main;
+  }
 }
