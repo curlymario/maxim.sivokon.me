@@ -6,7 +6,7 @@
     padding-left: 1.75rem;
   }
 
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop) and (orientation: landscape) {
     position: fixed;
     right: 0;
     top: 0;
