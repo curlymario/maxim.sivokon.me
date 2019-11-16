@@ -34,3 +34,9 @@ $fullhd:                    2000px;
 // transition
 $mouse-in:                  0.25s ease-out;
 $mouse-out:                 0.4s ease-in-out;
+
+// z-index:
+$z-popup:                   1000;
+$z-overlay:                 100;
+$z-bar:                     10;
+$z-base:                    1;

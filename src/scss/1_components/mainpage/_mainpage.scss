@@ -7,7 +7,6 @@
     padding-top: 1.2rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    position: relative;
     min-height: 100%;
 
     @media (min-width: $tablet) {
@@ -16,7 +15,7 @@
     }
 
     @media (min-width: $desktop) {
-      min-height: $tablet;
+      min-height: $phablet;
       padding-left: 0.25rem;
       padding-right: 0.5rem;
     }
@@ -28,6 +27,83 @@
 
     @media (min-width: $desktophd) and (orientation: landscape) {
       width: 46.55rem;
+    }
+  }
+
+
+  &__title {
+    .js & {  
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 1.2rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 1.25rem;
+      transition: top $mouse-out;
+      z-index: $z-bar;
+      background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+      & .is-collapsed {top: -3.5rem;}
+
+      @media (min-width: $tablet) {
+        padding-left: 1.25rem;
+      }
+
+      @media (min-width: $desktop) {
+        padding-left: 0.25rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  &__navbar {
+    .js & {
+      position: fixed;
+      right: 0em;
+      top: 0;
+      height: auto;
+      padding-top: 1.25rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      transition: right $mouse-out;
+      z-index: $z-bar;
+
+      & .is-collapsed {right: -6.75em;}
+
+      @media (min-width: $mobile) and (min-height: $tablet) {
+        height: auto;
+
+        & .is-collapsed {height: 0;}
+      }
+      @media (min-width: $tablet) {
+        height: auto;
+
+        & .is-collapsed {height: 0;}
+      }
+
+      @media (min-width: $desktop) and (orientation: landscape) {
+        height: auto;
+        right: 35%;
+
+        & .is-collapsed {right: calc(35% - 6.75em);}
+      }
+
+      @media (min-width: $desktophd) and (orientation: landscape) {
+        right: calc(100% - 46.55rem);
+
+        & .is-collapsed {right: calc(100% - 53.3rem);}
+      }
+    }
+  }
+
+  &__contacts {
+    .js & {
+      position: fixed;
+      bottom: 0;
+      z-index: $z-bar;
+
+      & .is-collapsed {bottom: -16rem}
     }
   }
 
@@ -47,6 +123,7 @@
       bottom: 0;
       width: 35%;
       padding: 0;
+      z-index: $z-overlay;
     }
 
     @media (min-width: $desktophd) and (orientation: landscape) {
