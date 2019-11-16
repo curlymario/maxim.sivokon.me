@@ -4,10 +4,16 @@ var path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/js/index.js',
+  entry: {
+    main_m: './src/js/scroll.js',
+    main: [
+      './src/js/scroll.js', 
+      './src/js/slogan.js'
+    ]
+  },
   output: {
     path: path.resolve(__dirname, 'js'),
-    filename: 'main.js'
+    filename: '[name].js'
   },
   devtool: 'source-map',
   module: {

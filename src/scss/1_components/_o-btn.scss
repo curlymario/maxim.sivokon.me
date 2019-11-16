@@ -12,7 +12,8 @@
 
   color: $color-main;
   border: 1px solid $text-color-gray;
-  background-color: transparent;
+  background-color: $color-light;
+  background-image: url("../img/bg-noise-300x300.png");
   // border-radius: 2.25em;
 
   transition: 
@@ -25,6 +26,7 @@
     color: $color-light;
     border: 1px solid $color-main;
     background-color: $color-main;
+    background-image: none;
     transition: 
       color $mouse-in, 
       border $mouse-in,
