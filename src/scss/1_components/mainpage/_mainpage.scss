@@ -16,13 +16,17 @@
     }
 
     @media (min-width: $desktop) {
-      min-height: 100%;
-      width: 65%;
+      min-height: $tablet;
       padding-left: 0.25rem;
       padding-right: 0.5rem;
     }
 
-    @media (min-width: $desktophd) {
+    @media (min-width: $desktop) and (orientation: landscape) {
+      min-height: 100%;
+      width: 65%;
+    }
+
+    @media (min-width: $desktophd) and (orientation: landscape) {
       width: 46.55rem;
     }
   }
@@ -36,7 +40,7 @@
       padding-left: 1.75rem;
     }
   
-    @media (min-width: $desktop) {
+    @media (min-width: $desktop) and (orientation: landscape) {
       position: fixed;
       right: 0;
       top: 0;
@@ -45,7 +49,7 @@
       padding: 0;
     }
 
-    @media (min-width: $desktophd) {
+    @media (min-width: $desktophd) and (orientation: landscape) {
       width: calc(100% - 46.55rem);
     }
   }

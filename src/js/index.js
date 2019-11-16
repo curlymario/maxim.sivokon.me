@@ -10,12 +10,13 @@ var options = {
     " user experience",
     " digital products"
   ],
-  typeSpeed: 80,
-  backSpeed: 20,
+  typeSpeed: 100,
+  backSpeed: 50,
   backDelay: 2000,
   startDelay: 0,
   loop: true,
   smartBackspace: true,
+  showCursor: false,
 }
 
 var typed = new Typed("#slogan-typed", options);
