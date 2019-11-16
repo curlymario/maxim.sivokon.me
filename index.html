@@ -72,19 +72,19 @@
 
 <body class="mainpage" itemscope itemtype="http://schema.org/Person" itemprop="author">
   <header class="mainpage__cover cover">
-    <h1 class="cover__title  mainpage__title  main_title " itemprop="name"><a class="main_title__link" href="/"><span itemprop="givenName">Maxim</span> V. <span itemprop="familyName">Sivokon</span></a></h1>
+    <h1 class="cover__title  mainpage__title  main_title " id="main_title" itemprop="name"><a class="main_title__link" href="/"><span itemprop="givenName">Maxim</span> V. <span itemprop="familyName">Sivokon</span></a></h1>
     
     <p class="cover__slogan  mainpage__slogan  main_slogan " itemprop="hasOccupation abstract speakable">
       I design <span class="main_slogan__dynamic" id="slogan-typed">interfaces</span>
     </p>
-    <nav class="cover__navbar  mainpage__navbar "><ul class="main_nav">
+    <nav class="cover__navbar  mainpage__navbar " id="main_navbar"><ul class="main_nav">
       <li class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon" itemprop="url relatedLink">Portfolio</a></li>
       <li class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/" itemprop="url relatedLink">Resume</a></li>
     </ul></nav>
 
-    <ul class="cover__contacts  mainpage__contacts " itemprop="contactPoint">
-      <li class="cover__contactslink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
-      <li class="cover__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon" itemprop="url">Telegram</a></li>
+    <ul class="cover__contacts  mainpage__contacts " id="main_contacts" itemprop="contactPoint">
+      <li class="cover__contactslink  mainpage__contactslink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
+      <li class="cover__contactslink  mainpage__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon" itemprop="url">Telegram</a></li>
     </ul>
 
     <span class="cover__lang" itemprop="knowsLanguage relatedLink"></span>
@@ -124,21 +124,29 @@
     // I hate JavaScript :(
     // media query event handler
     if (matchMedia) {
-    const mq = window.matchMedia("(min-width: 750px)");
-    mq.addListener(WidthChange);
-    WidthChange(mq);
+      const mq = window.matchMedia("(min-width: 900px)");
+      mq.addListener(WidthChange);
+      WidthChange(mq);
     }
     // media query change
     function WidthChange(mq) {
-    if (mq.matches) {
-      // adding the script tag to the head
-      var head = document.getElementsByTagName('head')[0];
-      var script = document.createElement('script');
-      script.type = 'text/javascript';
-      script.src = "js/main.js";
+      if (!mq.matches) {
+        // adding the script tag to the head
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "js/main_m.js";
 
-      // fire the loading
-      head.appendChild(script);
+        // fire the loading
+        head.appendChild(script);
+      } else {
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = "js/main.js";
+
+        // fire the loading
+        head.appendChild(script);
       }
     }
   </script>

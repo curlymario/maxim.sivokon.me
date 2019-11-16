@@ -45,6 +45,10 @@
         align-self: end;
         min-height: 4em;
       }
+      @media (min-width: $tablet) and (orientation: landscape) {
+        align-self: end;
+        min-height: 3em;
+      }
     }
   }
 
