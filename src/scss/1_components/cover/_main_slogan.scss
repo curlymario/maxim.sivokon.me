@@ -4,30 +4,69 @@
   font-weight: $medium-weight;
   color: $text-color-black;
   word-wrap: break-word;
-  
-  // language type settings
-  html[lang="en"] & {
-    line-height: 1;
-    letter-spacing: -0.01em;
-    max-width: 7.6em;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  max-width: 7.6em;
+
+  // magical fluid typography
+  font-size: 4rem;
+
+  @media (min-width: $mobile) {
+    font-size: calc(4rem + 1.8 * ((100vw - 25rem) / 9.5));
+    line-height: 1.1;
+  }
+
+  @media (min-width: $phablet) {
+    font-size: 5.8rem;
+  }
+
+  html[lang="en"].js & {
+    max-width: none;
+
+    @media (max-width: $phablet) {
+      padding-right: 1.2rem;
+    }
+    &__dynamic {
+      @media (max-width: 359.99px) {
+        max-width: 10.6rem;
+        display: inline-block;
+      }
+
+      @media (min-width: 360px) {
+        display: block;
+      }
+    }
   }
 
   html[lang="ru"] & {
-    line-height: 0.95;
     letter-spacing: -0.04em;
     max-width: 7.2em;
+
+    font-size: 4rem;
+
+    @media (min-width: $mobile) {
+      font-size: calc(4rem + 0.7 * ((100vw - 25rem) / 9.5));
+    }
+  
+    @media (min-width: $phablet) {
+      font-size: 4.7rem;
+    }
   }
 
-   // magical fluid typography
-  font-size: 4rem;
+  html[lang="ru"].js & {
+    max-width: none;
 
-  @media (min-width: 25rem) {
-    font-size: calc(4rem + 1.5 * ((100vw - 25rem) / 9.5));
-  }
+    @media (max-width: $phablet) {
+      padding-right: 1.2rem;
+    }
 
-  @media (min-width: 34.5rem) {
-    font-size: 5.5rem;
+    @media (min-width: $phablet) {
+      &__dynamic {
+        display: block;
+      }
+    }
   }
+  
 
   &__dynamic {
     color: $color-main;

@@ -7,27 +7,123 @@
     padding-top: 1.2rem;
     padding-left: 0.25rem;
     padding-right: 0.25rem;
-    position: relative;
     min-height: 100%;
 
+    @media (min-width: $phablet) {
+      padding-right: 0.5rem;
+    }
+
     @media (min-width: $tablet) {
-      min-height: $phablet;
       padding-left: 1.25rem;
     }
 
-    @media (min-width: $desktop) {
-      min-height: $tablet;
+    @media (min-width: $tablet) and (orientation: portrait) {
+      min-height: $mobile;
+    }
+
+    @media (min-width: $desktop) and (orientation: portrait) {
+      min-height: $phablet;
       padding-left: 0.25rem;
-      padding-right: 0.5rem;
     }
 
     @media (min-width: $desktop) and (orientation: landscape) {
       min-height: 100%;
       width: 65%;
+      padding-left: 0.25rem;
     }
 
     @media (min-width: $desktophd) and (orientation: landscape) {
       width: 46.55rem;
+    }
+  }
+
+
+  &__title {
+    .js & {  
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding-top: 1.2rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      padding-bottom: 1.25rem;
+      transition: top $navbar-scroll;
+      z-index: $z-bar;
+      background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+      &.is-collapsed {top: -4rem;}
+
+      @media (min-width: $phablet) {
+        width: 100%;
+        margin-top: 0;
+        padding-top: 1.2rem;
+        padding-bottom: 4.3rem;
+        &.is-collapsed {top: -7rem;}
+      }
+
+      @media (min-width: $tablet) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+      }
+
+      @media (min-width: $desktop) {
+        padding-left: 0.25rem;
+        padding-right: 0.5rem;
+      }
+    }
+  }
+
+  &__slogan {
+    @media (min-width: $phablet) and (max-width: $tablet) and (orientation: landscape) {
+      z-index: $z-overlay;
+    }
+  }
+
+  &__navbar {
+    .js & {
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100%;
+      padding-top: 1.25rem;
+      padding-left: 0.25rem;
+      padding-right: 0.25rem;
+      transition: right $navbar-scroll;
+      z-index: $z-bar;
+      background: $color-light url("../img/bg-noise-300x300.png") repeat;
+
+      &.is-collapsed {right: -10em;}
+
+      @media (min-width: $phablet) {
+        padding-right: 0.5rem;
+        height: auto;
+        background: none;
+      }
+
+      @media (min-width: $desktop) and (orientation: landscape) {
+        height: auto;
+        right: 35%;
+
+        &.is-collapsed {right: calc(35% - 6.75em);}
+      }
+
+      @media (min-width: $desktophd) and (orientation: landscape) {
+        right: calc(100% - 46.55rem);
+
+        &.is-collapsed {right: calc(100% - 53.3rem);}
+      }
+    }
+  }
+
+  &__contacts {
+    .js & {
+      position: fixed;
+      bottom: 0;
+      transition: bottom $navbar-scroll;
+      z-index: $z-bar;
+
+      &.is-collapsed {bottom: -6rem}
     }
   }
 
@@ -47,6 +143,7 @@
       bottom: 0;
       width: 35%;
       padding: 0;
+      z-index: $z-overlay;
     }
 
     @media (min-width: $desktophd) and (orientation: landscape) {

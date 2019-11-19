@@ -5,6 +5,10 @@
   color: $color-main;
 
   &__link {
+    margin-bottom: 1.25em;
+    margin-left: 0.45em;
+    margin-right: 0.45em;
+
     text-decoration: none;
     opacity: 1;
     border-bottom: 1px solid $color-light;

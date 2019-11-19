@@ -1,0 +1,17 @@
+var collapsible = ["main_title", "main_navbar", "main_contacts"];
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  window.setTimeout(function() {
+    for (var i in collapsible) {
+      this.console.log(collapsible[i])
+      var element = document.getElementById(collapsible[i]); // ненавижу блядь джаваскрипт
+      if (prevScrollpos > currentScrollPos) {
+        element.classList.remove('is-collapsed');
+      } else {
+        element.classList.add('is-collapsed');
+      }
+    };
+    prevScrollpos = currentScrollPos;
+  }, 200)
+};
