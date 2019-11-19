@@ -19,7 +19,7 @@
     &:hover,
     &:focus { 
       opacity: 0.85;
-      border-bottom: 1px solid $color-main;
+      border-bottom: 4px solid $color-main;
       transition: 
         opacity $mouse-in,
         border-bottom $mouse-in;
