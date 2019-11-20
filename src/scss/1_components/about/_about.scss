@@ -13,9 +13,19 @@
     top: 0;
     left: -1.8rem;
     writing-mode: vertical-lr;
+
+    &.is-init {
+      top: -2em;
+    }
+
+    &.is-animate {
+      transition: top $reveal-onscroll;
+    }
   }
 
   &__paragraph {
+    position: relative;
+    top: 0;
     font-family: $text-content;
     font-weight: $regular-weight;
     font-size: 1rem;
@@ -25,6 +35,14 @@
     padding-left: 0.45rem;
     margin-bottom: 1rem;
     max-width: 32em;
+
+    &.is-init {
+      top: -2em;
+    }
+
+    &.is-animate {
+      transition: top $reveal-onscroll;
+    }
 
     &:first-of-type {
       font-size: 1.5rem;
