@@ -25,10 +25,10 @@
   &:hover,
   &:focus {
     color: $color-main;
-    border-bottom: 1px solid $color-main;
+    border-bottom: 4px solid $color-main;
     @supports (border-block-end: 1px solid white) {
       border-bottom: none;
-      border-block-end: 1px solid $color-main;
+      border-block-end: 4px solid $color-main;
     }
     transition: 
       color $mouse-in, 

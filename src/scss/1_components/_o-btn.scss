@@ -1,4 +1,5 @@
 .o-btn {
+  position: relative;
   display: inline-block;
   padding: 0.5em 0.75em;
 
@@ -14,23 +15,34 @@
   border: 1px solid $text-color-gray;
   background-color: $color-light;
   background-image: url("../img/bg-noise-300x300.png");
-  // border-radius: 2.25em;
+  border-radius: 0.2em;
+  box-shadow: 3px 3px 0 0 $text-color-black;
 
   transition: 
     color $mouse-out, 
     border $mouse-out,
+    top $mouse-out,
+    box-shadow $mouse-in,
     background-color $mouse-out;
     
   &:hover,
   &:focus {
+    top: 1px;
+    box-shadow: 2px 2px 0 0 $text-color-black;
+    transition: 
+      color $mouse-in, 
+      border $mouse-in,
+      top $mouse-in,
+      box-shadow $mouse-in,
+      background-color $mouse-in;
+  }
+
+  &:active {
+    top: 2px;
     color: $color-light;
     border: 1px solid $color-main;
     background-color: $color-main;
     background-image: none;
-    transition: 
-      color $mouse-in, 
-      border $mouse-in,
-      background-color $mouse-in;
+    box-shadow: 1px 1px 0 0 $text-color-black;
   }
-
 }
