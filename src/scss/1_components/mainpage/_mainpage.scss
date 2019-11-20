@@ -130,9 +130,18 @@
   &__lang {
     .js & {
       position: fixed;
+      right: 0;
       bottom: 0;
       transition: bottom $navbar-scroll;
       z-index: $z-bar;
+
+      @media (min-width: $desktop) and (orientation: landscape) {
+        right: 35%;
+      }
+
+      @media (min-width: $desktophd) and (orientation: landscape) {
+        right: calc(100% - 46.55rem);
+      }
 
       &.is-collapsed {bottom: -6rem}
     }
