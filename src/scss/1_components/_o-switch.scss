@@ -1,0 +1,90 @@
+.o-switch {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+
+  font-family: $text-ui; 
+  font-weight: $regular-weight;
+  font-size: 0.75rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+
+  text-decoration: none;
+
+  &__toggle {
+    display: inline-block;
+    position: relative;
+    padding: 0.7em 0.5em;
+    color: $color-main;
+    border: 1px solid $text-color-gray;
+    background-color: $color-light;
+    background-image: url("../img/bg-noise-300x300.png");
+
+    transition: 
+      color $mouse-out, 
+      border $mouse-out,
+      top $mouse-out,
+      box-shadow $mouse-in,
+      background-color $mouse-out;
+
+    &.--left {
+      border-radius: 2em 0 0 2em;
+      padding-left: 0.7em;
+    }
+
+    &.--right {
+      border-radius: 0 2em 2em 0;
+      padding-right: 0.7em;
+    }
+
+    &.--on {
+      top: 2px;
+      color: $text-color-black;
+    }
+
+    &.--on.--left {
+      box-shadow: 3px 1px 0 0 $text-color-black;
+    }
+    &.--on.--right {
+      box-shadow: 1px 1px 0 0 $text-color-black;
+    }
+
+    &.--off.--right {
+      box-shadow: 3px 3px 0 0 $text-color-black;
+    }
+    &.--off.--left {
+      box-shadow: 4px 3px 0 0 $text-color-black;
+    }
+  }
+
+  &:hover .--off,
+  &:focus .--off {
+    top: 1px;
+    box-shadow: 2px 2px 0 0 $text-color-black;
+    transition: 
+      color $mouse-in, 
+      border $mouse-in,
+      top $mouse-in,
+      box-shadow $mouse-in,
+      background-color $mouse-in;
+  }
+
+  &:active .--on {
+    top: 1px;
+    box-shadow: 2px 2px 0 0 $text-color-black;
+
+    color: $color-main;
+    border: 1px solid $text-color-gray;
+    background-color: $color-light;
+    background-image: url("../img/bg-noise-300x300.png");
+  }
+
+  &:active .--off {
+    top: 2px;
+    box-shadow: 1px 1px 0 0 $text-color-black;
+
+    color: $color-light;
+    background-color: $color-main;
+    background-image: none;
+  }
+}

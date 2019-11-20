@@ -127,6 +127,17 @@
     }
   }
 
+  &__lang {
+    .js & {
+      position: fixed;
+      bottom: 0;
+      transition: bottom $navbar-scroll;
+      z-index: $z-bar;
+
+      &.is-collapsed {bottom: -6rem}
+    }
+  }
+
 
   &__portrait {
     padding-left: 0.7rem;
