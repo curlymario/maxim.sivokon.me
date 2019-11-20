@@ -1,4 +1,4 @@
-var collapsible = ["main_title", "main_navbar", "main_contacts"];
+var collapsible = ["main_title", "main_navbar", "main_contacts", "main_lang"];
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
