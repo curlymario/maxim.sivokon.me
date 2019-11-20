@@ -44,32 +44,34 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding-top: 1.2rem;
-      padding-left: 0.25rem;
-      padding-right: 0.25rem;
-      padding-bottom: 1.25rem;
-      transition: top $navbar-scroll;
+      padding-top: 1.2em;
+      padding-left: 0.25em;
+      padding-right: 0.25em;
+      padding-bottom: 1.25em;
+      transition: clip-path $navbar-scroll;
       z-index: $z-bar;
       background: $color-light url("../img/bg-noise-300x300.png") repeat;
+      clip-path: inset(0 -2px -2px 0);
 
-      &.is-collapsed {top: -4rem;}
+      &.is-collapsed {clip-path: inset(0 0 100% 0);}
 
       @media (min-width: $phablet) {
-        width: 100%;
-        margin-top: 0;
-        padding-top: 1.2rem;
-        padding-bottom: 4.3rem;
-        &.is-collapsed {top: -7rem;}
+        width: auto;
+        margin-top: 0.7rem;
+        margin-left: 0.5rem;
+        padding: 0.5em 0.25em;
+        border-radius: 1.5em;
+        border: 1px solid $text-color-gray;
       }
 
       @media (min-width: $tablet) {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
+        padding: 0.5em 0.8em;
       }
 
       @media (min-width: $desktop) {
-        padding-left: 0.25rem;
-        padding-right: 0.5rem;
+        margin-left: 0;
+        padding: 0.5em;
+        border: none;
       }
     }
   }
@@ -89,11 +91,13 @@
       padding-top: 1.25rem;
       padding-left: 0.25rem;
       padding-right: 0.25rem;
-      transition: right $navbar-scroll;
       z-index: $z-bar;
       background: $color-light url("../img/bg-noise-300x300.png") repeat;
 
-      &.is-collapsed {right: -10em;}
+      clip-path: inset(0 0 0 0);
+      transition: clip-path $navbar-scroll;
+
+      &.is-collapsed {clip-path: inset(0 0 0 100%);}
 
       @media (min-width: $phablet) {
         padding-right: 0.5rem;
@@ -104,14 +108,10 @@
       @media (min-width: $desktop) and (orientation: landscape) {
         height: auto;
         right: 35%;
-
-        &.is-collapsed {right: calc(35% - 6.75em);}
       }
 
       @media (min-width: $desktophd) and (orientation: landscape) {
         right: calc(100% - 46.55rem);
-
-        &.is-collapsed {right: calc(100% - 53.3rem);}
       }
     }
   }
@@ -120,7 +120,7 @@
     .js & {
       position: fixed;
       bottom: 0;
-      transition: bottom $navbar-scroll;
+      transition: bottom $btnbar-scroll;
       z-index: $z-bar;
 
       &.is-collapsed {bottom: -6rem}
@@ -130,9 +130,18 @@
   &__lang {
     .js & {
       position: fixed;
+      right: 0;
       bottom: 0;
-      transition: bottom $navbar-scroll;
+      transition: bottom $btnbar-scroll;
       z-index: $z-bar;
+
+      @media (min-width: $desktop) and (orientation: landscape) {
+        right: 35%;
+      }
+
+      @media (min-width: $desktophd) and (orientation: landscape) {
+        right: calc(100% - 46.55rem);
+      }
 
       &.is-collapsed {bottom: -6rem}
     }

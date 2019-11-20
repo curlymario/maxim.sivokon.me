@@ -5,9 +5,13 @@ var path = require('path');
 module.exports = {
   mode: 'production',
   entry: {
-    main_m: './src/js/scroll.js',
+    main_m: [
+      './src/js/scroll-nav.js',
+      './src/js/scroll-show.js'
+    ],
     main: [
-      './src/js/scroll.js', 
+      './src/js/scroll-nav.js', 
+      './src/js/scroll-show.js',
       './src/js/slogan.js'
     ]
   },

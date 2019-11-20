@@ -44,6 +44,7 @@
       @media (min-width: $phablet) and (orientation: landscape) {
         align-self: end;
         min-height: 4em;
+        margin-bottom: 0;
       }
     }
   }
@@ -77,7 +78,7 @@
     justify-self: end;
     margin-top: 0em;
     margin-bottom: 1.2em;
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 
     @supports (display: grid) {
       align-self: end;

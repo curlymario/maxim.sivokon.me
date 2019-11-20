@@ -16,6 +16,8 @@
   }
 
   &__paragraph {
+    position: relative;
+    top: 0;
     font-family: $text-content;
     font-weight: $regular-weight;
     font-size: 1rem;
