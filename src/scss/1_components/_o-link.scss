@@ -1,8 +1,4 @@
 .o-link {
-  font-size: 1.125rem;
-  line-height: 1;
-  letter-spacing: 0.03em;
-
   text-decoration: none;
 
   color: $text-color-black;    
@@ -15,8 +11,7 @@
   text-shadow:
     0.5px 0.5px $color-light,
     1px 1px $color-light,
-    1.5px 1.5px $color-light,
-    2px 2px $color-light;
+    1.5px 1.5px $color-light;
     // 1px -1px $color-light,
     // -1px 1px $color-light,
     // -1px -1px $color-light;
