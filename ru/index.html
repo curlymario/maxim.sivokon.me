@@ -50,6 +50,15 @@
   <link rel="stylesheet" type="text/css" href="../css/main.css?v=2.0.0">
 
   <script>
+    window.addEventListener('load', function() {
+      var elements = document.getElementsByClassName("is-collapsed");
+      while(elements.length > 0) {
+        elements[0].classList.remove("is-collapsed");
+      };
+    });
+  </script>
+
+  <script>
     window['_fs_debug'] = false;
     window['_fs_host'] = 'fullstory.com';
     window['_fs_script'] = 'edge.fullstory.com/s/fs.js';
@@ -77,17 +86,17 @@
     <p class="cover__slogan  mainpage__slogan  main_slogan" itemprop="hasOccupation abstract speakable">
       Я проектирую <span class="main_slogan__dynamic" id="slogan-typed">интерфейсы</span>
     </p>
-    <nav class="cover__navbar  mainpage__navbar " id="main_navbar"><ul class="main_nav">
+    <nav class="cover__navbar  mainpage__navbar is-collapsed" id="main_navbar"><ul class="main_nav">
       <li class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon" itemprop="url relatedLink">Портфолио</a></li>
       <li class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/" itemprop="url relatedLink">Резюме</a></li>
     </ul></nav>
 
-    <ul class="cover__contacts  mainpage__contacts " id="main_contacts" itemprop="contactPoint">
+    <ul class="cover__contacts  mainpage__contacts  is-collapsed" id="main_contacts" itemprop="contactPoint">
       <li class="cover__contactslink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
       <li class="cover__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon" itemprop="url">Telegram</a></li>
     </ul>
 
-    <div class="cover__lang  mainpage__lang" id="main_lang" itemprop="knowsLanguage relatedLink">
+    <div class="cover__lang  mainpage__lang " id="main_lang" itemprop="knowsLanguage relatedLink">
       <a class="o-switch" href="/">
         <span class="o-switch__toggle --left --off">En</span><span class="o-switch__toggle --right --on">Ru</span>
       </a>
