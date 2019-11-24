@@ -1,8 +1,4 @@
 .o-link {
-  font-size: 1.125rem;
-  line-height: 1;
-  letter-spacing: 0.03em;
-
   text-decoration: none;
 
   color: $text-color-black;    
@@ -15,8 +11,7 @@
   text-shadow:
     0.5px 0.5px $color-light,
     1px 1px $color-light,
-    1.5px 1.5px $color-light,
-    2px 2px $color-light;
+    1.5px 1.5px $color-light;
     // 1px -1px $color-light,
     // -1px 1px $color-light,
     // -1px -1px $color-light;
@@ -36,5 +31,32 @@
     transition: 
       color $mouse-in, 
       border $mouse-in;
+  }
+
+  &.--external::after,
+  &.--email:before {
+    font-family: $text-icon;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    opacity: .8;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    writing-mode: inherit;
+  }
+
+  &.--external::after {
+    content: "\e800";
+    margin-inline-start: .1em;
+  }
+  &.--email::before {
+    content: "\e802";
+    margin-inline-end: .1em;
   }
 }

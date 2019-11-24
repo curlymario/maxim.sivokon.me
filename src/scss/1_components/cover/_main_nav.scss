@@ -32,10 +32,18 @@
     margin-left: 0.5em;
     margin-bottom: 0.5em;
 
+    font-size: 1.25rem;
+    line-height: 1;
+    letter-spacing: 0.03em;
+
     @supports (display: grid) {
       margin-right: 0;
       margin-left: 0.1em;
       margin-bottom: 1em;
+    }
+
+    @media (min-width: $tablet) {
+      font-size: 1.5rem;
     }
   }
 }
