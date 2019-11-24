@@ -78,7 +78,6 @@
 
   &__slogan {
     @media (min-width: $phablet) and (max-width: $tablet) and (orientation: landscape) {
-      z-index: $z-overlay;
     }
   }
 
