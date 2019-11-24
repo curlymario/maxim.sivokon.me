@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2019 by original authors @ fontello.com</metadata>
+<defs>
+<font id="mvs-icon" horiz-adv-x="1000" >
+<font-face font-family="mvs-icon" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="external" unicode="&#xe800;" d="M665 74c0-24-18-42-41-42h-430c-23 0-41 18-41 42v435c0 23 18 41 41 41h235v77h-235c-65 0-117-53-117-118v-430c0-64 52-117 117-117h430c64 0 117 53 117 117v236h-76v-241z m194 647c0 6-6 11-6 11-6 6-6 6-12 6-6 0-12 6-17 6h-236v-76h141l-364-371 53-53 364 365v-141h77v235c6 6 0 12 0 18z" horiz-adv-x="941" />
+
+<glyph glyph-name="email" unicode="&#xe802;" d="M819 706h-638c-62 0-118-50-118-118v-475c0-63 56-119 118-119h632c62 0 118 56 118 119v475c0 0 0 0 0 0 7 68-50 118-112 118z m-638-81h632c12 0 31-6 37-25l-350-244-350 250c6 13 19 19 31 19z m675-512c0-25-18-38-37-38h-638c-25 0-37 19-37 38v400l331-232c13-12 31-12 44 0l331 232v-400z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>

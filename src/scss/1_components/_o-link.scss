@@ -32,4 +32,31 @@
       color $mouse-in, 
       border $mouse-in;
   }
+
+  &.--external::after,
+  &.--email:before {
+    font-family: $text-icon;
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    opacity: .8;
+  
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    text-align: center;
+    font-variant: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    writing-mode: inherit;
+  }
+
+  &.--external::after {
+    content: "\e800";
+    margin-inline-start: .1em;
+  }
+  &.--email::before {
+    content: "\e802";
+    margin-inline-end: .1em;
+  }
 }
