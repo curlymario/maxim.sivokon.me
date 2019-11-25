@@ -80,31 +80,33 @@
 </head>
 
 <body class="mainpage" itemscope itemtype="http://schema.org/Person" itemprop="author">
-  <header class="mainpage__cover cover">
+  <header class="mainpage__cover cover" aria-label="Обложка и навигация">
     <h1 class="cover__title  mainpage__title  main_title " id="main_title" itemprop="name"><a class="main_title__link" href="/ru/"><span itemprop="givenName">Максим</span> Владиславович<meta itemprop="familyName" content="Сивоконь" /></a></h1>
     
-    <p class="cover__slogan  mainpage__slogan  main_slogan" itemprop="hasOccupation abstract speakable">
+    <p class="cover__slogan  mainpage__slogan  main_slogan" itemprop="hasOccupation abstract speakable" aria-label="Я проектирую интерфейсы">
       Я проектирую <span class="main_slogan__dynamic" id="slogan-typed">интерфейсы</span>
     </p>
-    <nav class="cover__navbar  mainpage__navbar is-collapsed" id="main_navbar"><ul class="main_nav">
-      <li class="main_nav__item"><a class="o-link" href="#about">Обо мне</a></li>
-      <li class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon" itemprop="relatedLink">Портфолио</a></li>
-      <li class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/" itemprop="relatedLink">Резюме</a></li>
-    </ul></nav>
+    <nav role="navigation" class="cover__navbar  mainpage__navbar is-collapsed" id="main_navbar" aria-label="Меню навигации">
+      <ul role="menubar" class="main_nav">
+        <li role="menuitem" class="main_nav__item"><a class="o-link" href="#about">Обо мне</a></li>
+        <li role="menuitem" class="main_nav__item"><a class="o-link  --external" href="https://behance.net/maximsivokon" itemprop="relatedLink" aria-label="Портфолио (Внешняя ссылка)">Портфолио</a></li>
+        <li role="menuitem" class="main_nav__item"><a class="o-link  --external" href="https://www.linkedin.com/in/maximsivokon/" itemprop="relatedLink" aria-label="Резюме (Внешняя ссылка)">Резюме</a></li>
+      </ul>
+    </nav>
 
-    <ul class="cover__contacts  mainpage__contacts  is-collapsed" id="main_contacts" itemprop="contactPoint">
-      <li class="cover__contactslink"><a class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
-      <li class="cover__contactslink"><a class="o-btn"  href="https://t.me/maximsivokon">Telegram</a></li>
+    <ul role="menubar" class="cover__contacts  mainpage__contacts  is-collapsed" id="main_contacts" itemprop="contactPoint" aria-label="Контакты">
+      <li role="menuitem" class="cover__contactslink"><a role="button" class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
+      <li role="menuitem" class="cover__contactslink"><a role="button" class="o-btn"  href="https://t.me/maximsivokon">Telegram</a></li>
     </ul>
 
-    <div class="cover__lang  mainpage__lang " id="main_lang" itemprop="knowsLanguage relatedLink">
-      <a class="o-switch" href="/">
+    <div role="navigation" class="cover__lang  mainpage__lang " id="main_lang" itemprop="knowsLanguage relatedLink" aria-label="Переключить язык. Language switch.">
+      <a role="button" class="o-switch" href="/" aria-label="Go to English version">
         <span class="o-switch__toggle --left --off">En</span><span class="o-switch__toggle --right --on">Ru</span>
       </a>
     </div>
   </header>
 
-  <aside class="mainpage__portrait portrait" itemprop="image primaryImageOfPage">
+  <aside class="mainpage__portrait portrait" itemprop="image primaryImageOfPage" aria-label="Портрет Максима">
     <picture>
       <source media="(min-width: 1500px) and (orientation: landscape)" srcset="../img/portrait/v-1750.jpg, ../img/portrait/v-1750@2x.jpg 2x" sizes="40vw">
       <source media="(min-width: 1500px)" srcset="../img/portrait/1500@2x.jpg" sizes="100vw">
@@ -116,24 +118,24 @@
       <source media="(min-width: 552px)" srcset="../img/portrait/750.jpg, ../img/portrait/750@2x.jpg 2x" sizes="100vw">
       <source media="(min-width: 400px)" srcset="../img/portrait/552.jpg, ../img/portrait/552@2x.jpg 2x" sizes="100vw">
       <source media="(max-width: 399.99px)" srcset="../img/portrait/400.jpg, ../img/portrait/400@2x.jpg 2x" sizes="100vw">
-      <img src="../img/portrait/400.jpg" alt="Maxim’s portrait">
+      <img src="../img/portrait/400.jpg" id="portrait" alt="Портрет Максима">
     </picture>
   </aside>
 
-  <main class="mainpage__about about" id="about" itemprop="description speakable">
-    <h1 class="about__heading" aria-label="О странице">Обо мне</h1>
+  <main role="main" class="mainpage__about about" id="about" itemprop="description speakable" aria-labelledby="about__heading">
+    <h1 class="about__heading" id="about__heading" aria-label="О странице">Обо мне</h1>
     <div class="about__author" itemprop="about">
       <h2 class="visuallyhidden">Обо мне</h2>
       <p class="about__paragraph">Привет!</p>
       <p class="about__paragraph">Меня зовут Максим и я <span itemprop="jobTitle">дизайнер</span>. <span itemprop="makesOffer">Я соединяю бизнес с людьми и людей с технологиями</span> — так, по-крайней мере, я говорю себе каждый день перед сном.</p>
       <p class="about__paragraph" itemprop="knowsAbout">Вместе с великими людьми, делаю полезные цифровые вещи классными, а классные вещи удобными.</p>
-      <p class="about__paragraph" itemprop="knowsAbout">В свободное время, познаю программирование как способ решения проблем и <a class="about__link  o-link --external" href="https://github.com/curlymario">код</a> как инструмент проектирования; изучаю текст как разновидность интерфейса и <a class="about__link  o-link --external" href="https://instagram.com/baddrawingdaily">шрифт</a> как сложное выразительное средство.</p>
+      <p class="about__paragraph" itemprop="knowsAbout">В свободное время, познаю программирование как способ решения проблем и <a class="about__link  o-link --external" href="https://github.com/curlymario" aria-label="код (внешняя ссылка на гитхаб)">код</a> как инструмент проектирования; изучаю текст как разновидность интерфейса и <a class="about__link  o-link --external" href="https://instagram.com/baddrawingdaily" aria-label="шрифт (внешняя ссылка на инстаграм)">шрифт</a> как сложное выразительное средство.</p>
       <p class="about__paragraph">Мои повседневные рабочие инструменты: чёрная гелевая ручка, бумага в клетку, Figma, Adobe Illustrator, VS Code, Mozilla Firefox.</p>
       <p class="about__paragraph">Убеждён, что музыка — самая универсальная форма искусства, видеоигры — самая богатая и сложная, а вебкомиксы — самая недооценённая и недоисследованная.</p>
       <p class="about__paragraph">С <time itemprop="birthDate" datetime="1991-01-02">1991</time> жил <span itemprop="birthPlace nationality">на Урале</span>, с 2015 живу <span itemprop="homeLocation workLocation">в Санкт-Петербурге</span>. С 2006 делаю всякое на комьютере, c 2019 рисую сайты и приложения в компании <span itemprop="worksFor">Деньга</span>.</p>
       <p class="about__paragraph">Люблю чай, пиксели и лис.</p>
       <p class="about__paragraph">С любовью сверстал этот сайт вручную сам (оно и видно).</p>
-      <p class="about__paragraph">Предложить интересный проект или просто передать привет можно на почту <a class="about__link  o-link --email" href="mailto:maxim@sivokon.me" target="_blank" itemprop="email">maxim@sivokon.me</a> или в телеграм <a class="about__link  o-link  --external" href="https://t.me/maximsivokon">@maximsivokon</a>.</p>
+      <p class="about__paragraph">Предложить интересный проект или просто передать привет можно на почту <a class="about__link  o-link --email" href="mailto:maxim@sivokon.me" target="_blank" itemprop="email" aria-label="maxim@sivokon.me">maxim@sivokon.me</a> или в телеграм <a class="about__link  o-link  --external" href="https://t.me/maximsivokon" aria-label="@maximsivokon (внешняя ссылка в телеграм)">@maximsivokon</a>.</p>
     </div>
   </main>
     
