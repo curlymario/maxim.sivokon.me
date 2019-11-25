@@ -64,6 +64,10 @@
       margin-bottom: 2em;
     }
 
+    @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) {
+      padding-bottom: 0.5rem;
+    }
+
     &link {
       display: inline-block;
       margin-left: 0.45em;
@@ -90,6 +94,10 @@
     }
     @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
       margin-right: 3.2rem;
+    }
+
+    @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) {
+      padding-bottom: 0.5rem;
     }
   }
 }
