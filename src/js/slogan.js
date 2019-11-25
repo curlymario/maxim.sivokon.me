@@ -13,7 +13,7 @@ var options = {
   typeSpeed: 100,
   backSpeed: 50,
   backDelay: 2000,
-  startDelay: 0,
+  startDelay: 1000,
   loop: true,
   smartBackspace: true,
   showCursor: false,

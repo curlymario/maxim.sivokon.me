@@ -47,7 +47,32 @@
 
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:500|IBM+Plex+Mono:400|IBM+Plex+Sans:400&display=swap&subset=cyrillic">
-  <link rel="stylesheet" type="text/css" href="css/main.css?v=2.0.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css?v=0.4.0">
+  
+  <script defer type="text/javascript" src="js/main.js"></script>
+
+  <script>
+    // I hate JavaScript :(
+    // media query event handler
+    if (matchMedia) {
+      const mq = window.matchMedia("(min-width: 900px)");
+      mq.addListener(WidthChange);
+      WidthChange(mq);
+    }
+    // media query change
+    function WidthChange(mq) {
+      if (mq.matches) {
+        // adding the script tag to the head
+        var head = document.getElementsByTagName('head')[0];
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'js/typed.js';
+
+        // fire the loading
+        head.appendChild(script);
+      }
+    }
+  </script>
 
   <script>
     window.addEventListener('load', function() {
@@ -138,37 +163,5 @@
       <p class="about__paragraph">If you want to offer me an interesting project to collaborate or just say “hi”, mail me at <a class="about__link  o-link --email" href="mailto:maxim@sivokon.me" target="_blank" aria-label="maxim@sivokon.me">maxim@sivokon.me</a> or telegram <a class="about__link  o-link  --external" href="https://t.me/maximsivokon" itemprop="email" aria-label="@maximsivokon (external link to Telegram messenger)">@maximsivokon</a>.</p>
     </div>
   </main>
-        
-
-  <script>
-    // I hate JavaScript :(
-    // media query event handler
-    if (matchMedia) {
-      const mq = window.matchMedia("(min-width: 900px)");
-      mq.addListener(WidthChange);
-      WidthChange(mq);
-    }
-    // media query change
-    function WidthChange(mq) {
-      if (!mq.matches) {
-        // adding the script tag to the head
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = "js/main_m.js";
-
-        // fire the loading
-        head.appendChild(script);
-      } else {
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.type = 'text/javascript';
-        script.src = "js/main.js";
-
-        // fire the loading
-        head.appendChild(script);
-      }
-    }
-  </script>
 </body>
 </html>
