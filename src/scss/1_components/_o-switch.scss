@@ -20,12 +20,7 @@
     background-color: $color-light;
     background-image: url("../img/bg-noise-300x300.png");
 
-    transition: 
-      color $mouse-out, 
-      border $mouse-out,
-      top $mouse-out,
-      box-shadow $mouse-in,
-      background-color $mouse-out;
+    transition: all $btn-hover;
 
     &.--left {
       border-radius: 2em 0 0 2em;
@@ -38,7 +33,7 @@
     }
 
     &.--on {
-      top: 2px;
+      transform: translateY(2px);
       color: $text-color-black;
     }
 
@@ -59,18 +54,13 @@
 
   &:hover .--off,
   &:focus .--off {
-    top: 1px;
+    transform: translateY(1px);
     box-shadow: 2px 2px 0 0 $text-color-black;
-    transition: 
-      color $mouse-in, 
-      border $mouse-in,
-      top $mouse-in,
-      box-shadow $mouse-in,
-      background-color $mouse-in;
+    transition: all $btn-hover;
   }
 
   &:active .--on {
-    top: 1px;
+    transform: translateY(1px);
     box-shadow: 2px 2px 0 0 $text-color-black;
 
     color: $color-main;
@@ -80,8 +70,9 @@
   }
 
   &:active .--off {
-    top: 2px;
+    transform: translateY(2px);
     box-shadow: 1px 1px 0 0 $text-color-black;
+    text-shadow: -0.5px -0.5px 1px $text-color-black;
 
     color: $color-light;
     background-color: $color-main;
