@@ -15,6 +15,19 @@
     writing-mode: vertical-lr;
   }
 
+  &__author {
+    padding-left: 0.45em;
+    max-width: 32em;
+
+    @media (min-width: $phablet) {
+      padding-left: 1.5em;
+    }
+
+    @media (min-width: $desktop) {
+      padding-left: 6.5em;
+    }
+  }
+
   &__paragraph {
     position: relative;
     top: 0;
@@ -24,21 +37,11 @@
     line-height: 1.6;
     color: $text-color-black;
 
-    padding-left: 0.45rem;
     margin-bottom: 1rem;
-    max-width: 32em;
 
     &:first-of-type {
       font-size: 1.5rem;
       font-weight: $medium-weight;
-    }
-
-    @media (min-width: $phablet) {
-      padding-left: 1.5rem;
-    }
-
-    @media (min-width: $desktop) {
-      padding-left: 6.5rem;
     }
   }
 }
