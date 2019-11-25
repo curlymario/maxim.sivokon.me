@@ -4,7 +4,7 @@ var path = require('path');
 module.exports = {
   mode: 'production',
     entry: {
-      main_m: [
+      main_mobile: [
         './src/js/scroll-nav.js',
         './src/js/scroll-show.js'
       ],
