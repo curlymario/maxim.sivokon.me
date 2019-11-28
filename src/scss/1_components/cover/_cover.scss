@@ -36,14 +36,13 @@
     
     .no-js & {
       @media (orientation: landscape) {
-        align-self: end;
+        margin-top: 8rem;
       }
     }
 
     .js & {
       @media (min-width: $phablet) and (orientation: landscape) {
-        align-self: end;
-        min-height: 4em;
+        margin-top: 8rem;
         margin-bottom: 0;
       }
     }
