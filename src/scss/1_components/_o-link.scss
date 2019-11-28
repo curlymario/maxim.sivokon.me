@@ -20,6 +20,7 @@
   transition: 
     color $mouse-out, 
     border $mouse-out;
+  will-change: color, border;
     
   &:hover,
   &:focus {

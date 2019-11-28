@@ -19,6 +19,7 @@
   box-shadow: 3px 3px 0 0 $text-color-black;
 
   transition: all $btn-hover;
+  will-change: transform, box-shadow, text-shadow, border, color, background-color;
     
   &:hover,
   &:focus {
