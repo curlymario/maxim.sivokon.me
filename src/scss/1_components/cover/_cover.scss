@@ -79,8 +79,7 @@
   &__lang {
     grid-area: lang;
     justify-self: end;
-    margin-top: 0em;
-    margin-bottom: 1.2em;
+    margin-top: 0;
     padding-right: 0.5rem;
 
     @supports (display: grid) {
@@ -89,7 +88,7 @@
 
     //Safari browserbar fix
     @media (max-width: $desktop) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-      margin-bottom: 3.2rem;
+      margin-bottom: 2em;
     }
     @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
       margin-right: 3.2rem;
@@ -97,6 +96,11 @@
 
     @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) {
       padding-bottom: 0.5rem;
+    }
+
+    &switch {
+      margin-top: 0;
+      margin-bottom: 1.2rem;
     }
   }
 }
