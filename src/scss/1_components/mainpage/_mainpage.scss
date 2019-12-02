@@ -3,8 +3,6 @@
   font-family: $text-main; 
   background: $color-light url("../img/bg-noise-300x300.png") repeat;
 
-  cursor: url('../img/cursor/default.svg'), auto;
-
   &__cover {
     padding-top: 1.2rem;
     padding-left: 0.25rem;
@@ -40,10 +38,7 @@
   }
 
 
-  &__title {
-
-    cursor: url('../img/cursor/link.svg'), auto;
-    
+  &__title {    
     .js & {  
       position: fixed;
       top: 0;
@@ -88,9 +83,6 @@
   }
 
   &__navbar {
-
-    cursor: url('../img/cursor/link.svg'), auto;
-
     .js & {
       position: fixed;
       right: 0;
@@ -131,8 +123,6 @@
       bottom: 0;
       z-index: $z-bar;
 
-      cursor: url('../img/cursor/btn.svg'), auto;
-
       will-change: transform;
       transition: transform $btnbar-scroll;
 
@@ -146,8 +136,6 @@
       right: 0;
       bottom: 0;
       z-index: $z-bar;
-
-      cursor: url('../img/cursor/btn.svg'), auto;
 
       will-change: transform;
       transition: transform $btnbar-scroll;

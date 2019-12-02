@@ -1,6 +1,7 @@
 .about {
   position: relative;
-
+  cursor: url('../img/cursor/default.svg'), auto;
+  
   &__heading {
     font-family: $text-display;
     font-weight: $medium-weight;

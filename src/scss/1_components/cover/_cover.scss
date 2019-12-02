@@ -1,5 +1,6 @@
 .cover {
   font-family: $text-main; 
+  cursor: url('../img/cursor/default.svg'), auto;
 
   @supports (display: grid) {
     display: grid;
@@ -12,11 +13,13 @@
 
   &__title {
     grid-area: title;
+    cursor: url('../img/cursor/link.svg') 32 0, auto;
   }
 
   &__navbar {
     grid-area: navigation;
     justify-self: end;
+    cursor: url('../img/cursor/link.svg') 32 0, auto;
 
     //Safari browserbar fix
     @media (min-width: $phablet) and (max-width: $desktop) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
@@ -54,6 +57,8 @@
     margin: 0;
     list-style: none;
 
+    cursor: url('../img/cursor/btn.svg') 0 34, auto;
+
     @supports (display: grid) {
       align-self: start;
     }
@@ -81,6 +86,7 @@
     justify-self: end;
     margin-top: 0;
     padding-right: 0.5rem;
+    cursor: url('../img/cursor/btn.svg') 0 34, auto;
 
     @supports (display: grid) {
       align-self: end;
