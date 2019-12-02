@@ -38,7 +38,7 @@
   }
 
 
-  &__title {
+  &__title {    
     .js & {  
       position: fixed;
       top: 0;
@@ -52,6 +52,7 @@
       z-index: $z-bar;
       background: $color-light url("../img/bg-noise-300x300.png") repeat;
       clip-path: inset(0 -2px -2px 0);
+      will-change: clip-path;
 
       &.is-collapsed {clip-path: inset(0 0 100% 0);}
 
@@ -94,6 +95,7 @@
       background: $color-light url("../img/bg-noise-300x300.png") repeat;
 
       clip-path: inset(0 0 0 0);
+      will-change: clip-path;
       transition: clip-path $navbar-scroll;
 
       &.is-collapsed {clip-path: inset(0 0 0 100%);}
@@ -119,10 +121,12 @@
     .js & {
       position: fixed;
       bottom: 0;
-      transition: bottom $btnbar-scroll;
       z-index: $z-bar;
 
-      &.is-collapsed {bottom: -6rem}
+      will-change: transform;
+      transition: transform $btnbar-scroll;
+
+      &.is-collapsed {transform: translateY(100%);}
     }
   }
 
@@ -131,8 +135,10 @@
       position: fixed;
       right: 0;
       bottom: 0;
-      transition: bottom $btnbar-scroll;
       z-index: $z-bar;
+
+      will-change: transform;
+      transition: transform $btnbar-scroll;
 
       @media (min-width: $desktop) and (orientation: landscape) {
         right: 35%;
@@ -142,7 +148,7 @@
         right: calc(100% - 46.55rem);
       }
 
-      &.is-collapsed {bottom: -6rem}
+      &.is-collapsed {transform: translateY(100%);}
     }
   }
 

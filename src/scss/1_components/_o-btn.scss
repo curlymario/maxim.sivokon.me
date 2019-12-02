@@ -10,6 +10,7 @@
   letter-spacing: 0.05em;
 
   text-decoration: none;
+  cursor: url('../img/cursor/btn.svg') 0 34, auto;
 
   color: $color-main;
   border: 1px solid $text-color-gray;
@@ -19,6 +20,7 @@
   box-shadow: 3px 3px 0 0 $text-color-black;
 
   transition: all $btn-hover;
+  will-change: transform, box-shadow, text-shadow, border, color, background-color;
     
   &:hover,
   &:focus {

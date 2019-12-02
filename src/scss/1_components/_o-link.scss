@@ -1,5 +1,6 @@
 .o-link {
   text-decoration: none;
+  cursor: url('../img/cursor/link.svg') 32 0, auto;
   white-space: nowrap;
 
   color: $text-color-black;    
@@ -20,6 +21,7 @@
   transition: 
     color $mouse-out, 
     border $mouse-out;
+  will-change: color, border;
     
   &:hover,
   &:focus {
