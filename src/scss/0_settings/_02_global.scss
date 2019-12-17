@@ -38,3 +38,11 @@ html, body {
   background-color: $color-main;
   color: $color-light;
 }
+
+body {
+  cursor: url('../img/cursor/default.svg'), auto;
+}
+
+a {
+  cursor: url('../img/cursor/link.svg') 32 0, auto;
+}
