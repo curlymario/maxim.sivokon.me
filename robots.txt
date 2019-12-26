@@ -1,0 +1,7 @@
+User-Agent: *
+Disallow:
+Sitemap: https://maxim.sivokon.me/sitemap.xml
+
+User-Agent: YandexBot
+Disallow:
+Host: https://maxim.sivokon.me/ru/
