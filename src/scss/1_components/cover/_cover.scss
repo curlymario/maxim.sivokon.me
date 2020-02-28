@@ -57,8 +57,6 @@
     margin: 0;
     list-style: none;
 
-    cursor: url('../img/cursor/btn.svg') 0 34, auto;
-
     @supports (display: grid) {
       align-self: start;
     }
@@ -86,7 +84,6 @@
     justify-self: end;
     margin-top: 0;
     padding-right: 0.5rem;
-    cursor: url('../img/cursor/btn.svg') 0 34, auto;
 
     @supports (display: grid) {
       align-self: end;
