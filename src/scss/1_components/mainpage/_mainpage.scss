@@ -126,7 +126,7 @@
       will-change: transform;
       transition: transform $btnbar-scroll;
 
-      &.is-collapsed {transform: translateY(100%);}
+      &.is-collapsed {transform: translateY(200%);}
     }
   }
 
@@ -148,7 +148,7 @@
         right: calc(100% - 46.55rem);
       }
 
-      &.is-collapsed {transform: translateY(100%);}
+      &.is-collapsed {transform: translateY(200%);}
     }
   }
 
