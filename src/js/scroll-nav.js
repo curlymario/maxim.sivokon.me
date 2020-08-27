@@ -6,9 +6,9 @@ window.onscroll = function() {
     for (var i in collapsible) {
       this.console.log(collapsible[i])
       var element = document.getElementById(collapsible[i]); // ненавижу блядь джаваскрипт
-      if (prevScrollpos > currentScrollPos) {
+      if (prevScrollpos > currentScrollPos && prevScrollpos - currentScrollPos > 15.0) {
         element.classList.remove('is-collapsed');
-      } else {
+      } else if (prevScrollpos < currentScrollPos && currentScrollPos - prevScrollpos > 15.0) {
         element.classList.add('is-collapsed');
       }
     };
