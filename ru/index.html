@@ -9,8 +9,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Максим Сивоконь — Веб-дизайнер, проектировщик интерфейсов</title>
-  <meta name="Description" content="Я соединяю бизнес с людьми и людей с технологиями — так, по-крайней мере, я говорю себе каждый день перед сном.">
+  <meta name="Description" content="Я делаю вебсайты, такие как этот (и сайты сложнее и больше). Ещё я проектирую мобильные, настольные и веб-приложения, и даже видеоигры. Оказался в финтех индустрии. Напишите, если вашей команде нужен дизайнер: maxim@sivokon.me">
   
+  <!--Preconnect domains-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://edge.fullstory.com" />
+  <link rel="dns-prefetch" href="https://behance.net" />
+  <link rel="dns-prefetch" href="https://www.linkedin.com/" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:500|IBM+Plex+Mono:400|IBM+Plex+Sans:400&display=swap&subset=cyrillic">
+  <link rel="stylesheet" type="text/css" href="../css/main.css?v=0.4.0">
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -18,9 +29,9 @@
       "givenName": "Максим",
       "familyName": "Сивоконь",
       "jobTitle": "Проектировщик интерфейсов",
-      "url": "https://maxim.sivokon.me/ru",
-      "image": "https://maxim.sivokon.me/img/og.jpg"
-      "logo": "https://maxim.sivokon.me/img/favicon/favicon.svg"
+      "url": "https://maxim.sivokon.me/ru/",
+      "image": "https://maxim.sivokon.me/img/og.jpg",
+      "logo": "https://maxim.sivokon.me/img/favicon/favicon.svg",
       "contactPoint": [
         { "@type": "ContactPoint",
           "telephone": "+7 (911) 761-95-00",
@@ -55,16 +66,16 @@
   <meta property="og:description" content="Веб-дизайнер, проектировщик интерфейсов" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="ru_RU" />
-  <meta property="og:url" content="https://maxim.sivokon.me/ru" />
+  <meta property="og:url" content="https://maxim.sivokon.me/ru/" />
   <meta property="og:image" content="../img/og.jpg" />
 
   <!-- Icons: generics -->
-  <link rel="icon" href="../img/favicon/favicon-32.png" sizes="32x32">
-  <link rel="icon" href="../img/favicon/favicon-96.png" sizes="96x96">
-  <link rel="icon" href="../img/favicon/favicon-128.png" sizes="128x128">
-  <link rel="icon" href="../img/favicon/favicon-192.png" sizes="192x192">
-  <link rel="icon" href="../img/favicon/favicon-228.png" sizes="228x228">
-  <link rel="icon" href="../img/favicon/favicon-512.png" sizes="512x512">
+  <link rel="icon" href="../img/favicon/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="../img/favicon/favicon-96.png" sizes="96x96" type="image/png">
+  <link rel="icon" href="../img/favicon/favicon-128.png" sizes="128x128" type="image/png">
+  <link rel="icon" href="../img/favicon/favicon-192.png" sizes="192x192" type="image/png">
+  <link rel="icon" href="../img/favicon/favicon-228.png" sizes="228x228" type="image/png">
+  <link rel="icon" href="../img/favicon/favicon-512.png" sizes="512x512" type="image/png">
   <link rel="icon" href="../img/favicon/favicon.svg">
 
   <!-- Chrome, Firefox OS and Opera -->
@@ -72,23 +83,19 @@
   <link rel="manifest" href="../manifest.json">
 
   <!-- Android -->
-  <link rel="shortcut icon" sizes="196x196" href="../img/favicon/favicon-196.png">
+  <link rel="shortcut icon" sizes="196x196" href="../img/favicon/favicon-196.png" type="image/png">
 
   <!-- iOS -->
-  <link rel="apple-touch-icon" href="../img/favicon/favicon-120.png" sizes="120x120">
-  <link rel="apple-touch-icon" href="../img/favicon/favicon-152.png" sizes="152x152">
-  <link rel="apple-touch-icon" href="../img/favicon/favicon-180.png" sizes="180x180">
+  <link rel="apple-touch-icon" href="../img/favicon/favicon-120.png" sizes="120x120" type="image/png">
+  <link rel="apple-touch-icon" href="../img/favicon/favicon-152.png" sizes="152x152" type="image/png">
+  <link rel="apple-touch-icon" href="../img/favicon/favicon-180.png" sizes="180x180" type="image/png">
 
   <!-- Windows 8 IE 10-->
   <meta name="msapplication-TileColor" content="#FFF9F2">
-  <meta name="msapplication-TileImage" content="../img/favicon/favicon-144.png">
+  <meta name="msapplication-TileImage" content="../img/favicon/favicon-144.png" type="image/png">
 
   <!-- Windows 8.1 + IE11 and above -->
   <meta name="msapplication-config" content="../browserconfig.xml" />
-
-  <!-- CSS -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Rubik:500|IBM+Plex+Mono:400|IBM+Plex+Sans:400,500&display=swap&subset=cyrillic">
-  <link rel="stylesheet" type="text/css" href="../css/main.css?v=0.4.0">
 
   <script defer type="text/javascript" src="js/main.js"></script>
 
@@ -147,7 +154,7 @@
 
 <body class="mainpage" itemscope itemtype="http://schema.org/Person" itemprop="author">
   <header class="mainpage__cover cover" aria-label="Обложка и навигация">
-    <h1 class="cover__title  mainpage__title  main_title " id="main_title" itemprop="name"><a class="main_title__link" href="/ru/"><span itemprop="givenName">Максим</span> Владиславович<meta itemprop="familyName" content="Сивоконь" /></a></h1>
+    <h1 class="cover__title  mainpage__title  main_title  fn " id="main_title" itemprop="name"><a class="main_title__link url n" href="/ru/"><span class="given-name" itemprop="givenName">Максим</span> <span class="additional-name">Владиславович</span><meta class="family-name" itemprop="familyName" content="Сивоконь" /></a></h1>
     
     <p class="cover__slogan  mainpage__slogan  main_slogan" itemprop="hasOccupation abstract speakable" aria-label="Я проектирую интерфейсы">
       Я проектирую <span class="main_slogan__dynamic" id="slogan-typed">интерфейсы</span>
@@ -161,7 +168,7 @@
     </nav>
 
     <ul role="menubar" class="cover__contacts  mainpage__contacts  is-collapsed" id="main_contacts" itemprop="contactPoint" aria-label="Контакты">
-      <li role="menuitem" class="cover__contactslink"><a role="button" class="o-btn"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
+      <li role="menuitem" class="cover__contactslink"><a role="button" class="o-btn  email"  href="mailto:maxim@sivokon.me" target="_blank">Email</a></li>
       <li role="menuitem" class="cover__contactslink"><a role="button" class="o-btn"  href="https://t.me/maximsivokon">Telegram</a></li>
     </ul>
 
@@ -172,7 +179,7 @@
     </div>
   </header>
 
-  <aside class="mainpage__portrait portrait" itemprop="image primaryImageOfPage" aria-label="Портрет Максима">
+  <aside class="mainpage__portrait portrait  photo" itemprop="image primaryImageOfPage" aria-label="Портрет Максима">
     <picture>
       <source media="(min-width: 1500px) and (orientation: landscape)" srcset="../img/portrait/v-1750.jpg, ../img/portrait/v-1750@2x.jpg 2x" sizes="40vw">
       <source media="(min-width: 1500px)" srcset="../img/portrait/1500@2x.jpg" sizes="100vw">
@@ -193,15 +200,15 @@
     <div class="about__author" itemprop="about">
       <h2 class="visuallyhidden">Обо мне</h2>
       <p class="about__paragraph">Привет!</p>
-      <p class="about__paragraph">Меня зовут Максим, и я <span itemprop="jobTitle">дизайнер</span>. <span itemprop="makesOffer">Я соединяю бизнес с людьми и людей с технологиями</span> — так, по-крайней мере, я говорю себе каждый день перед сном.</p>
-      <p class="about__paragraph" itemprop="knowsAbout">Вместе с великими людьми, делаю полезные цифровые вещи классными, а классные вещи удобными.</p>
-      <p class="about__paragraph" itemprop="knowsAbout">В свободное время, познаю программирование как способ решения проблем и <a class="about__link  o-link --external" href="https://github.com/curlymario" aria-label="код (внешняя ссылка на гитхаб)">код</a> как инструмент проектирования; изучаю текст как разновидность интерфейса и <a class="about__link  o-link --external" href="https://instagram.com/baddrawingdaily" aria-label="шрифт (внешняя ссылка на инстаграм)">шрифт</a> как сложное выразительное средство.</p>
-      <p class="about__paragraph">Мои повседневные рабочие инструменты: чёрная гелевая ручка, бумага в клетку, Figma, Adobe Illustrator, VS Code, Mozilla Firefox.</p>
-      <p class="about__paragraph">Убеждён, что музыка — самая универсальная форма искусства, видеоигры — самая богатая и сложная, а вебкомиксы — самая недооценённая и недоисследованная.</p>
-      <p class="about__paragraph">С <time itemprop="birthDate" datetime="1991-01-02">1991</time> жил <span itemprop="birthPlace nationality">на Урале</span>, с 2015 живу <span itemprop="homeLocation workLocation">в Санкт-Петербурге</span>. С 2006 делаю всякое на комьютере, c 2019 рисую сайты и приложения в компании <span itemprop="worksFor">Деньга</span>.</p>
-      <p class="about__paragraph">Люблю чай, пиксели и лис.</p>
-      <p class="about__paragraph">С любовью сверстал этот сайт вручную сам (оно и видно).</p>
-      <p class="about__paragraph">Предложить интересный проект или просто передать привет можно на почту <a class="about__link  o-link --email" href="mailto:maxim@sivokon.me" target="_blank" itemprop="email" aria-label="maxim@sivokon.me">maxim@sivokon.me</a> или в телеграм <a class="about__link  o-link  --external" href="https://t.me/maximsivokon" aria-label="@maximsivokon (внешняя ссылка в телеграм)">@maximsivokon</a>.</p>
+      <p class="about__paragraph  note">Меня зовут Максим, и я <span class="cathegory" itemprop="jobTitle">дизайнер</span>. 
+      <p class="about__paragraph  note" itemprop="knowsAbout">Делаю сайты, а также мобильные, настольные и веб-приложения. Совместно с крутыми людьми делаю полезные цифровые вещи классными, а классные вещи удобными.</p>
+      <p class="about__paragraph  note">Мои повседневные рабочие инструменты: чёрная гелевая ручка, бумага в клетку, Figma, Adobe Illustrator, VS Code, Mozilla Firefox.</p>
+      <p class="about__paragraph  note" itemprop="knowsAbout">В свободное время познаю программирование как способ решения проблем и <a class="about__link  o-link --external" href="https://github.com/curlymario" aria-label="код (внешняя ссылка на гитхаб)">код</a> как инструмент проектирования; изучаю текст как разновидность интерфейса и шрифт как сложное выразительное средство; прокачиваю свои навыки цифровой иллюстрации и <a class="about__link  o-link --external" href="https://instagram.com/curlymario.lab" aria-label="рисунка (внешняя ссылка на инстаграм)"></a>рисунка</a></p>
+      <p class="about__paragraph  note">Убеждён, что музыка — самая универсальная форма искусства, видеоигры — самая богатая и сложная, а вебкомиксы — самая недооценённая и недоисследованная.</p>
+      <p class="about__paragraph  note">С <time itemprop="birthDate" datetime="1991-01-02">1991</time> жил <span itemprop="birthPlace nationality">на Урале</span>, с 2015 живу <span itemprop="homeLocation workLocation">в Санкт-Петербурге</span>. С 2006 делаю всякое на комьютере, c 2019 рисую сайты и приложения в компании <span itemprop="worksFor">Деньга</span>.</p>
+      <p class="about__paragraph  note">Люблю чай, лис и пикселярт.</p>
+      <p class="about__paragraph  note">С любовью сверстал этот сайт вручную сам (оно и видно).</p>
+      <p class="about__paragraph  note">Предложить интересный проект или просто передать привет можно на почту <a class="about__link  o-link --email  email" href="mailto:maxim@sivokon.me" target="_blank" itemprop="email" aria-label="maxim@sivokon.me">maxim@sivokon.me</a> или в телеграм <a class="about__link  o-link  --external" href="https://t.me/maximsivokon" aria-label="@maximsivokon (внешняя ссылка в телеграм)">@maximsivokon</a>.</p>
     </div>
   </main>
     

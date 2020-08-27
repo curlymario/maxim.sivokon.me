@@ -129,6 +129,10 @@
       transition: transform $btnbar-scroll;
 
       &.is-collapsed {transform: translateY(100%);}
+      //Safari browserbar fix
+      @supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) {
+        &.is-collapsed {transform: translateY(200%);}
+      }
     }
   }
 
@@ -143,6 +147,10 @@
       transition: transform $btnbar-scroll;
 
       &.is-collapsed {transform: translateY(100%);}
+      //Safari browserbar fix
+      @supports (-webkit-marquee-repetition:infinite) and (object-fit:fill) {
+        &.is-collapsed {transform: translateY(200%);}
+      }
     }
   }
 
