@@ -1,20 +1,33 @@
 // webpack.config.js
 var path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-    entry: {
-      main: [
-        './src/js/scroll-nav.js',
-        './src/js/scroll-show.js'
-      ],
-      typed: [
-        './src/js/ru/slogan.js'
-      ]
+  entry: {
+    main: [
+      './src/js/scroll-nav.js',
+      './src/js/scroll-show.js'
+    ],
+    typed: [
+      './src/js/ru/slogan.js'
+    ]
   },
   output: {
     path: path.resolve(__dirname, 'ru/js'),
     filename: '[name].js'
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false
+          }
+        }
+      })
+    ]
   },
   devtool: 'source-map',
   module: {

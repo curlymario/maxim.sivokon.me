@@ -1,6 +1,6 @@
-
 // webpack.config.js
 var path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   mode: 'production',
@@ -16,6 +16,18 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'js'),
     filename: '[name].js'
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new UglifyJsPlugin({
+        uglifyOptions: {
+          output: {
+            comments: false
+          }
+        }
+      })
+    ]
   },
   devtool: 'source-map',
   module: {
